@@ -271,7 +271,7 @@ $$
 $$
 das Taylorpolynom $k$-ter Ordnung vou $f$ in a.}
 \nt{Eine hübsche andere Formel für den Fall $U\subset \mathbb{R}^2$ und $f:U\to \mathbb{R}$, ist über die Summe der binomischen Formeln:
-$$f(x) = f+\sum_{i=1}^k\frac{1}{i!}\left(\frac{\partial f}{\partial x}(x-a)+\frac{\partial f}{\partial y}(y-a)\right)^i$$ mit $f$ evaluiert an der Stelee $a$. Der Zussamenhang folgt aus dem Zussamenhang, dass man bei $\alpha$ $k$ Elemente aus $n$ auswählt.}
+$$f(x) = f+\sum_{i=1}^k\frac{1}{i!}\left(\frac{\partial f}{\partial x}(x-a)+\frac{\partial f}{\partial y}(y-a)\right)^i$$ mit $f$ evaluiert an der Stelle $a$. Der Zussamenhang folgt aus der Beziehung zum Binomialkoeffizienten, da man bei $\alpha$ $k$ Elemente aus $n$ auswählt.}
 \ex{}{
 Sei $f(x,y) = e^{-x^2-y^2}$ und der Entwicklungspunkt $a=(1,1)$, dann sind 
 $$
@@ -353,5 +353,6 @@ die durch $f$ definierte Hyperfläche.
     \caption{Eine 3-dimensionale Kugel mit dem Radius 1}
     \label{fig:kreis}
 \end{figure}
-\dfn{Tengentialraum}{Sei $X=N(f)$}
+\dfn{Tengentialraum}{Sei $X=N(f)$, $f$ stetig differenzierbar, eine Hyperfläche und $a\in X$. Ist 
+$$f(x) = f(a) + \sum_{\left|\alpha\right|\leq 1}\frac{df}{dx}$$}
 \end{document}
