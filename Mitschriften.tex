@@ -1,0 +1,357 @@
+\documentclass{report}
+
+\input{preamble}
+\input{macros}
+\input{letterfonts}
+
+\title{\Huge{Mathe 3}\\Mitschriften}
+\author{\huge{Paul Glaser}}
+\date{\today}
+
+\begin{document}
+\nocite{*}
+
+\maketitle
+\newpage% or \cleardoublepage
+% \pdfbookmark[<level>]{<title>}{<dest>}
+\pdfbookmark[section]{\contentsname}{toc}
+\tableofcontents
+\pagebreak
+\chapter{Funktionen im $\mathbb{R}^n$}
+\section{Krümmung}
+\dfn{}{Sei $g:[0, L]$ eine zweimal steigt differenzierbare Kurve, parametrisiert nach Bogenlänge. Dann heißt
+$$
+T(s)=g^{\prime}(s)
+$$
+Tangentialvektor der Kurve,
+$$
+\kappa=\kappa(s)=\left\|T^{\prime}(s)\right\|_2 = \left|\frac{d\psi}{ds}\right|
+$$
+heißt Krümmung der Kurve im Punkt $g(s)$ und
+$$
+N(s)=\frac{T^{\prime}(s)}{\kappa(s)}
+$$
+heißt Normalenvektor (definiert, wenn $\kappa(s) \neq 0$ ), also
+$$
+T^{\prime}(s)=\kappa(s) N(s)
+$$}
+\nt{Da $g$ parametrisiert ist, ist $\|T\| = 1$.\newline
+ $N(s)$ ist einfach nur die normierte Zweite Ableitung, folgt aus der Eigenschaft das $\|T\| = 1$.
+\begin{align*}
+     1 & = \langle T(s),T(s) \rangle\\
+     \frac{d}{ds} 1 &= \frac{d}{ds}\langle T(s),T(s) \rangle\\
+     0 &= \frac{d}{ds}\sum t_i^2\\
+     0 &= 2\sum t_i\cdot t_i^{'}\\
+     0 &= \langle T(s),T^{'}(s) \rangle\\
+ \end{align*}
+ }
+\dfn{Krümmungskreis}{Für ebene Kurven ist der Kreis mit Mittelpunkt $g(s)+\frac{1}{\kappa} N(s)$ und Radius $r=\frac{1}{\kappa}$, der Kreis, der die Kurve $g(s)$ am besten approximiert. Wir nennen diesen Kreis den Krümmungskreis.}
+\nt{Da $\|N(s)\|=1$ gibt $r\cdot N(s)$ exakt die Radius Länge. Je größer die Kurve gekrümmt ist, desto kleiner wird der Kreis, während desto flacher die Kurve ist der Kreis auch flacher wird und sich perfekt anähert.}
+
+\section{Kurven in $\mathbb{R}^3$}
+\dfn{}{Sei $g:[0, L] \rightarrow \mathbb{R}^3$ eine Kurve, die nach Bogenlänge parametrisiert ist. Dann ist $N \perp T$. Wir wählen nun $B \in \mathbb{R}^3$ so, dass
+$$
+(T, N, B)
+$$
+eine orientierte Orthonormalmatrix bilden.\newline
+Der Vektor $B$ heißt Binormalenvektor und das Tripel $(T, N, B)$ heißt Fresnelsches Dreibein.}
+\thm{}{Die Ableitung des Binormalenvektors $B(s)$ kann durch
+$$
+B^{\prime}(s)=-\tau(s) N(s)
+$$
+beschrieben werden, wobei $\tau(s)$ eine bestimmte Funktion $R \rightarrow R$ ist. Wir nennen $\tau(s)$ die Torsion der Kurve im Punkt $g(s)$.}
+\nt{
+    \begin{align*}
+        B(s) &= T(s)\times N(s)\\
+        \frac{d B(s)}{ds}&=\frac{d(T(s) \times N(s))}{ds}\\
+        &=\frac{d T(s)}{ds}N(s) \times N(s)+T(s) \times \frac{d N(s)}{d s}\\
+        &=\kappa N(s) \times N(s)+T(s) \times \frac{d N(s)}{d s}\\
+        &= T(s)\times \frac{d N(s)}{ds}\\
+        &\text{$T(s)\implies$ orthogonal zu $T(s)$}\\
+        &\text{da $r(s)\cdot r^{'}(s) = 0$ für alle $r$ mit $\|r\|=1$, muss $\frac{dB(s)}{ds}$ orthogonal zu $B(s)$ sein }\\
+        &= \tau N(s)
+    \end{align*}}
+\section*{Funktionen auf $\mathbb{R}^n$}
+\dfn{}{Mit $f: D \subset \mathbb{R}^n \rightarrow \mathbb{R}$ ordnen wir jedem Element von $D \subset \mathbb{R}^n$ einen reellen Wert zu.
+Die Menge $\Gamma_f:=\{(x, y) \in D \times \mathbb{R} \mid f(x)=y\}$ ist der Graph von $f$.}
+\dfn{Niveaumenge}{Sei $f: D \rightarrow \mathbb{R}$ und $c \in \mathbb{R}$. Die Menge aller Punkte $x$ für die $f(x)=c$,
+$$
+N_c(f)=\{x \in D \mid f(x)=c\},
+$$
+heißt Niveaumenge von $f$ zum Niveau $c$.}
+\nt{Man erhält den Contourplot durch mehrfaches plotten von verschiedenen Niveaumengen.}
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale = 1]{Bilder/F.pdf}
+    \quad
+    \includegraphics[]{Bilder/F_countour.pdf}
+    \caption{Die Funktion $f(x_1, x_2) = x_1^2  +x_2^2$ und ihr Contourplot}
+\end{figure}
+\dfn{Offener und abgeschlossener Ball}{Sei $a \in \mathbb{R}^n$ und $r>0$. Dann ist die Menge
+$$
+B_r(a):=\left\{x \in \mathbb{R}^n \mid\|x-a\|_2<r\right\}
+$$
+ein offener Ball mit Radius $r$ und
+$$
+\overline{B_r(a)}:=\left\{x \in \mathbb{R}^n \mid\|x-a\|_2 \leq r\right\}
+$$
+ein abgeschlossener Ball mit Radius $r$.}
+\dfn{Offen und abgeschlossen}{Sei $U \subset \mathbb{R}^n$ eine Teilmenge.\newline
+$U$ heißt offen, falls $\forall a \in U: \exists \varepsilon>0$ so dass $B_{\varepsilon}(a) \subset U$.\newline
+Eine Teilmenge $A \subset \mathbb{R}^n$ heißt abgeschlossen, wenn $\mathbb{R}^n \backslash A$ offen ist.}
+\nt{$B_r(a)$ ist offen und $\overline{B_r(a)}$ ist abgeschlossen.}
+\dfn{beschränkt und kompakt}{Eine Teilmenge $D \subset \mathbb{R}^n$ heißt beschränkt, wenn es ein $r>0$ gibt, so dass $D \subset B_r(0)$. Eine abgeschlossene und beschränkte Menge $K \subset \mathbb{R}^n$ heißt kompakt.}
+\dfn{}{Sei $D \subset \mathbb{R}^n$ eine Teilmenge.
+$$
+\stackrel{\circ}{D}:=\left\{x \in \mathbb{R}^n \mid \exists \varepsilon>0: B_{\varepsilon}(x) \subset D\right\}
+$$
+ist die Menge der inneren Punkte von $D$. Mit
+$$
+\bar{D}:=\left\{x \in \mathbb{R}^n \mid B_{\varepsilon}(x) \cap D \neq \emptyset \forall \varepsilon>0\right\}
+$$
+bezeichnen wir den Abschluss von $D$. Der Rand von $D$ ist
+$$
+\partial D=\bar{D} \backslash \stackrel{\circ}{D}
+$$}
+\nt{noch keine Ahnung was ich dazu sagen soll :)}
+\ex{}{$$
+B_r(a) \text { ist der Abschluss von } B_r(a) \text { und } \partial B_r(a)=\left\{x \in \mathbb{R}^n \mid\|x-a\|_2=r\right\} \text { ist die Kugeloberfläche }
+$$}
+\section{Differentiation}
+\dfn{stetig}{Sei $D \subset \mathbb{R}^n, f: D \rightarrow \mathbb{R}$ eine Funktion.
+Die Funktion $f$ heißt stetig in $a \in D \subset \mathbb{R}^n$, wenn für alle $\varepsilon>0$ ein $\delta>0$ existiert, so dass
+$$
+|f(x)-f(a)|<\varepsilon \quad \forall x \in D
+$$
+mit $\|x-a\|_2<\delta$}
+\thm{}{Summe, Produkte und Quotienten (falls definiert) stetiger Funktionen sind stetig.}
+\dfn{Partiell differenzierbar}{Sei $f: U \rightarrow R, a=\left(a_1, \ldots, a_n\right) \in U$
+Dann heißt $f$ in a partiell nach $x_i$ differenzierbar, wenn die Funktion in einer Variablen
+$$
+x_i \mapsto f\left(a_1, \ldots, a_{i-1}, x_i, a_{i+1}, \ldots, a_n\right)
+$$
+nach $x_i$ differenzierbar ist. Dann heißt
+$$
+\frac{\partial f}{\partial x_j}(a):=\lim _{h \rightarrow 0} \frac{f\left(a_1, \ldots, a_{i-1}, a_i+h, a_{i+1}, \ldots, a_n\right)-f\left(a_1, \ldots, a_{i-1}, a_i, a_{i+1}, \ldots, a_n\right)}{h}
+$$
+die partielle Ableitung von $f$ nach $x_i$.}
+\nt{Die komplexe Version der Ableitung vom Ein-dimensionalem falls
+$$
+\frac{df}{dx}(x) = \lim_{h\to \infty}\frac{f(x+h)-f(x)}{h}
+$$}
+\dfn{Gradient}{Ist $f: U \rightarrow \mathbb{R}, U$ offen, in jedem Punkt nach allen Variablen partiell differenzierbar, dann heißt $U$ partiell differenzierbar auf $U$. Der Vektor
+$$
+\nabla f(a):=(\operatorname{grad} f)(a):=\left[\begin{array}{lll}
+\frac{\partial f}{\partial x_1}(a) & \ldots & \frac{\partial f}{\partial x_n}(a)
+\end{array}\right]
+$$
+heißt Gradient von $f$ im Punkt $a \in U$.}
+\ex{}{Sei $f(x,y) = (x^2+y^2, x\cdot y^2)$. Dann ist 
+\begin{align*}
+    \nabla f(x,y)&=(\operatorname{grad} f)(x,y):=\left[\begin{array}{ll}
+        \frac{\partial f}{\partial x}(x,y) ,& \frac{\partial f}{\partial y}(x,y)
+        \end{array}\right]\\
+        &=(2x,2xy)
+\end{align*}
+}
+\dfn{Hesse-Matrix}{Die Matrix
+$$
+\operatorname{Hess}(f)=\left(\frac{\partial^2 f}{\partial x_i \partial x_j}\right)_{i j}=\left[\begin{array}{cccc}
+\frac{\partial^2 f}{\partial x_1^2} &  \cdots & \frac{\partial^2 f}{\partial x_1 \partial x_n} \\
+\vdots & & \vdots \\
+\frac{\partial^2 f}{\partial x_n \partial x_1} & \cdots &\frac{\partial^2 f}{\partial x_n^2} 
+\end{array}\right]
+$$
+heißt Hesse-Matrix.}
+\thm{}{Sei $f: U \rightarrow \mathbb{R}$ zweimal stetig differenzierbar, dann gilt
+$$
+\frac{\partial^2 f}{\partial x_i \partial x_j}=\frac{\partial^2 f}{\partial x_j \partial x_i} .
+$$
+Das heißt unter diesen Voraussetzungen ist die Hesse-Matrix symmetrisch.}
+\ex{}{Sei $f(x,y)=\sqrt{x^2(1-y)}$, dann ist 
+$$\operatorname{Hess}(f) = \left[\begin{array}{ccc}
+    6x\cdot y^2 & 4x\cdot y^3\cdot z^2\cdot c^2 & 0\\
+    4x\cdot y^3\cdot z^2 &  
+\end{array}\right]$$
+}
+
+
+
+
+
+\chapter{Taylorformel und Extremstellen}
+\section{Kettenregel}
+\dfn{}{Sei $ U \subset \mathbb{R}^n$ offen, $f: U \rightarrow \mathbb{R}^m$ $f(u) \subset V \subset \mathbb{R}^m$ und $V$ offen, sowie $g: V \rightarrow \mathbb{R}$ und $h=g \circ f$ 
+Die Koordinaten in $U$ bezeichnen wir mit $x_i$, die in $V$ mit $x_j$. Dann gilt
+$$
+\frac{\partial h}{\partial x_i}(x)=\sum_{j=1}^m \frac{\partial g}{\partial y_j}\left(f(x)\right) \frac{\partial f_j}{\partial x_i}(x)
+$$}
+\nt{Die Kettenregel lässt sich über herleiten durch nutzen der Taylor-Entwicklung Erster Ordnung:\newline
+Seien $f,g,h$ definiert wie oben, dann ist
+\begin{equation}\label{eq:1}    
+g(y) \approx g(f(x))+\sum_{j=1}^m \frac{\partial g}{\partial y_j}(f(x))\left(y_j-f_j(x)\right).
+\end{equation}
+Für $f$ in der Nähe von $x$ erhält man:
+$$
+f_i(x+\Delta x) \approx f_i(x)+\sum_{k=1}^n \frac{\partial f_i}{\partial x_k}(x) \Delta x_k
+$$
+Da Eq:\ref*{eq:1} $h$ beschreibt und man an der Entwicklungsstelle $h(x+\Delta x)$ interessiert sind, setzt  man $y = f(x+\Delta x)$ in die Taylor-Entwicklung von $g$ ein
+\begin{align*}
+h(x+\Delta x) &\approx g(f(x+\Delta x))+\sum_{j=1}^m \frac{\partial g}{\partial y_j}(f(x))\left(f_j(x+\Delta x)-f_j(x)\right)\\
+h(x)+\Delta h(x)&\approx g(f(x))+\sum_{j=1}^m \frac{\partial g}{\partial y_j}(f(x))\left(\sum_{k=1}^n \frac{\partial f_j}{\partial x_k}(x) \Delta x_k\right)\\
+\Delta h(x) &\approx \sum_{j=1}^m \frac{\partial g}{\partial y_j}(f(x))\left(\sum_{k=1}^n \frac{\partial f_j}{\partial x_k}(x) \Delta x_k\right)\quad \text{ da $h(x)=g(f(x))$}\\
+\frac{\Delta h(x)}{\Delta x_i} &\approx \sum_{j=1}^m \frac{\partial g}{\partial y_j}(f(x))\left(\sum_{k=1}^n \frac{\partial f_j}{\partial x_k}(x) \frac{\Delta x_k}{\Delta x_i}\right)\\
+\frac{\partial h}{\partial x_i}(x)=\lim _{\Delta x_i \rightarrow 0} \frac{\Delta h(x)}{\Delta x_i} &= \sum_{j=1}^m \frac{\partial g}{\partial y_j}(f(x)) \frac{\partial f_j}{\partial x_i}(x)\quad \text{ da $\frac{\Delta x_k}{\Delta x_i}$ wird 0 für alle $k\neq i$}\\
+\end{align*}
+}
+\ex{}{Sei $f(r,\phi) = (r\cdot \cos(\phi),r\cdot \sin(\phi))$, dann ist 
+$$J_f = \operatorname*{D}f = \left[\begin{array}{cc}
+    \cos(\phi) & -r\cdot \sin(\phi)\\
+    \sin(\phi) & r\cdot \cos(\phi)
+\end{array}\right]$$
+Sei $g(x,y) = x^2+ y^2$, dann ist $\operatorname*{D}g = (2x,2y)$.\newline
+Sei $h = g\circ f$, dann ist gilt
+$$h(r,\phi) = (r\cdot \cos(\phi))^2+(r\cdot \sin(\phi))^2 = r^2 $$
+Von hier ist leicht zu sehen, dass 
+$$\frac{\partial h}{\partial r} = 2r\quad \frac{\partial h}{\partial \phi} = 0$$
+\begin{align*}
+    \operatorname*{D} h(r,\phi) &= \operatorname*{D}g(f(r,\phi))\cdot \operatorname*{D}f\\
+    &= (2 r \cos f, 2 r \sin \phi) \cdot \operatorname*{D} f(r, \phi) \\
+    & = (2 r, 0)
+\end{align*}
+Es kann auch über die Formel berechnet werden
+\begin{align*}
+    \frac{\partial h}{\partial r}(r,\phi) &= \frac{\partial g}{\partial x}(f(r,\phi))\frac{\partial f_1}{\partial r}(r,\phi)+ 
+    \frac{\partial g}{\partial y}(f(r,\phi))\frac{\partial f_2}{\partial r}(r,\phi)\\
+    &= 2\cdot (r\cos(\phi))\cos(\phi)+2\cdot(r\sin(\phi))\sin(\phi)\\
+    &=2r
+\end{align*}
+\begin{align*}
+    \frac{\partial h}{\partial \phi}(r,\phi) &= \frac{\partial g}{\partial x}(f(r,\phi))\frac{\partial f_1}{\partial \phi}(r,\phi)+ 
+    \frac{\partial g}{\partial y}(f(r,\phi))\frac{\partial f_2}{\partial \phi}(r,\phi)\\
+    &=2\cdot(r\cdot \cos(\phi))\cdot(-r\sin(\phi))+2\cdot(r\cdot \sin(\phi))\cdot(r\cos(\phi))\\
+    &=0
+\end{align*}
+Man erhält das gleiche Ergebnis
+    }
+
+
+
+
+
+
+
+
+
+
+
+\section{Richtungsableitungen}
+\dfn{}{Sei $U \subset \mathbb{R}^n$ offen und $f: U \rightarrow \mathbb{R}, a \in U$ und $v \in \mathbb{R}^n$ mit $\|v\|=1$, Dann heißt
+$$\left(D_v f\right)(a)=\lim _{h \rightarrow 0} \frac{f(a+h \cdot v)-f(a)}{h}$$
+Richtungsableitung von $f$ in Richtung $v$.}
+\thm{}{Sei $f: U \rightarrow \mathbb{R}, U \in \mathbb{R}^n$ offen, total und differenzierbar in $a$. Dann gilt
+$$
+(D_v f)(a)=\langle(\operatorname{grad} f)(a), v\rangle \text {. }
+$$
+Insbesondere: Für $v\in g^{n-1}:=\left\{v e \mathbb{R}^n \mid\|v\|=1\right\}$ ist die Richtungsableitung maximal genau dann, wenn de fradiar (gradf) (a) in die Gluide Ridehueg wie V zeigt}
+\section{Taylorpolynome}
+\dfn{Multiindex}{$\alpha=\left(\alpha_1, \ldots, \alpha_n\right) \in \mathbb{N}^n$ nennen wir einen Multiindex.
+$|\alpha|=\alpha_1+\ldots+\alpha_n$ heißt Totalgrad von $\alpha$. Wir setzen $x^\alpha=x_1^{\alpha_1} x_n^{\alpha_n}$ Damnn bezeichnet
+$$
+\operatorname*{D}^\alpha f:=\frac{\partial^{|\alpha|} f}{\partial x^\alpha}=\frac{\partial^{|\alpha|} f}{\partial x_1^{\alpha_1} \ldots \partial x_n^{\alpha_n}}
+$$
+Die $\alpha$-te partielle Ableitung.}
+\ex{}{\begin{align*}
+    & \alpha=(1,2,3) \quad\left|\alpha\right|=1+2+3=6 \\
+    & \operatorname*{D}^\alpha f=\frac{\partial^6 f}{\partial x_1 \partial x_2^2 \partial x_3^3}
+    \end{align*}}
+\dfn{Taylorpolynome}{Sei $U \subset \mathbb{R}^n$ offen, $a \in U$. sei $f: u \rightarrow \mathbb{R}$ $k$-mal stetig partiell differenzierbar. Dann heißt das polynom
+$$
+\sum_{|\alpha| \leq k} \frac{\partial|\alpha| f}{\partial x|\alpha|}(a) \cdot \frac{(x-a)^\alpha}{\alpha !}
+$$
+das Taylorpolynom $k$-ter Ordnung vou $f$ in a.}
+\nt{Eine hübsche andere Formel für den Fall $U\subset \mathbb{R}^2$ und $f:U\to \mathbb{R}$, ist über die Summe der binomischen Formeln:
+$$f(x) = f+\sum_{i=1}^k\frac{1}{i!}\left(\frac{\partial f}{\partial x}(x-a)+\frac{\partial f}{\partial y}(y-a)\right)^i$$ mit $f$ evaluiert an der Stelee $a$. Der Zussamenhang folgt aus dem Zussamenhang, dass man bei $\alpha$ $k$ Elemente aus $n$ auswählt.}
+\ex{}{
+Sei $f(x,y) = e^{-x^2-y^2}$ und der Entwicklungspunkt $a=(1,1)$, dann sind 
+$$
+\frac{\partial f}{\partial x}=-2 x e^{-x^2-y^2}\quad 
+\frac{\partial f}{\partial y}=-2 y e^{-x^2-y^2}
+$$
+Die ersten partiellen Ableitungen und 
+$$
+\frac{\partial^2 f}{\partial x^2}=\left(4 x^2-2\right) e^{-x^2-y^2} \quad \frac{\partial^2 f}{\partial x\partial y}=4 x y e^{-x^2-y^2}\quad
+\frac{\partial^2f}{\partial y^2}=\left(4 y^2-2\right) e^{-x^2-y^2}
+$$
+Daraus folgt das Das Taylorpolynom erster Ordnung 
+$$
+f(x) = f(a) + \frac{\partial f}{\partial x}(a)\cdot(x-a) + \frac{\partial f}{\partial y}(a)\cdot (y-a) = 1
+$$
+Das Taylorpolynom 2-ter Ordnung ist 
+\begin{align*}
+    f(x) &= f(a) + \frac{\partial f}{\partial x}(a)\cdot(x-a) + \frac{\partial f}{\partial y}(a)\cdot (y-a)\\
+    &+ \frac{1}{2}\left(\frac{\partial^2 f}{\partial x^2}(a)\cdot (x-a)^2+\frac{\partial^2 f}{\partial x\partial y}(a)\cdot (x-a)(y-a)
+    +\frac{\partial^2f}{\partial y^2}(a)\cdot (y-a)^2\right)\\
+    &= 1-x^2-y^2
+\end{align*}
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.15]{Bilder/Taylopolynome.png}
+    \caption{Die Funktion $f(x, y) = e^{-x^2 - y^2}$ und die Taylorpolynome erster und zweiter Ordnung um den Entwicklungspunkt $(0,0)$.}
+\end{figure}
+}
+\section{Extrempunkte, Maxima, Minima}
+\dfn{}{Ser $f: u \rightarrow \mathbb{R}, U \subset \mathbb{R}^n$.
+$f$ hat ein lokales 
+(lokales Muimun), wenn ein Ball
+$Br (a) \subset U$ existiert, so dass $\left.f\right|_{B_r(a)}$
+in $a$ das Maximum (Minimun) hat.\newline
+$f$ hat ein lokales Extrema, wenn eine der beiden Bediengungen eintritt.}
+\mlenma{}{Die Matrix $A=A^{\top} \in \mathbb{R}^{n\times n}$ ist positiv definit, falls
+\begin{align*}
+    &x^{\top} A x>0 \quad \forall x \in \mathbb{R}^n \backslash\{0\} \text {. }\\
+    &\iff \text{ alle Eigenwerte der Matrix  $> 0$ sind}
+\end{align*}
+}
+\thm{Minima und Maxima}{Sei $U \subset \mathbb{R}^k$ offen: $f: U \rightarrow \mathbb{R}$ zweimal stetig partiell differenzierbar
+\begin{itemize}
+    \item[1] Notwendig dafür, dass $f$ in $a \in U$ ein lokales Extrema hat, ist dass
+    $$
+    \frac{\partial f}{\partial x_1}(a)=\ldots=\frac{\partial f}{\partial x_n}(a)=0
+    $$Ist die notwendige Bedingung erfüllt, dann ist hinreichend für ein lokales Minimum, dass die Matrix
+    $$
+    A=\operatorname{Hess}(f)(a)=\left(\frac{\partial^2 f}{\partial x_i \partial x_j}(a)\right)_{i j}
+    $$
+    positiv definit ist. Ist $A$ negativ definit dann liegt ein lokales Maximun vor.
+\end{itemize} 
+}
+\ex{}{
+    $$
+\begin{aligned}
+& f(x, y)=x^2+y^2 \quad \frac{\partial f}{\partial x}=2 x=0 \\
+& \frac{\partial f}{\partial y}=2 y=0
+\end{aligned}
+$$
+$\Rightarrow(0,0)$ ist der einzige Kandidat für ein lokales Extrema
+$$
+\operatorname*{Hess}(f)(a)=\left[\begin{array}{ll}
+2 & 0 \\
+0 & 2
+\end{array}\right]>0
+$$
+Folglich hat die Funktion in (0,0) ein lokales Minima.
+}
+\chapter{Hyperflächen und Satz über implizite Funktionen}
+\dfn{Hyperflächen}{Sei $f:\mathbb{R}^n \to \mathbb{R}$ eine differenzierbare Funktion. Dann heißt ihre Nullstellenmenge
+$$N(f):=N_0(f)=\{a\in \mathbb{R}^n\mid f(a)=0\}$$
+die durch $f$ definierte Hyperfläche.
+}
+\ex{}{$x^2+y^2+z^2-1 = 0$  ist eine Kugel, siehe abb. \ref*{fig:kreis}}
+\begin{figure}[H]
+    \centering
+    \includegraphics*{Bilder/Kugel.pdf}
+    \caption{Eine 3-dimensionale Kugel mit dem Radius 1}
+    \label{fig:kreis}
+\end{figure}
+\dfn{Tengentialraum}{Sei $X=N(f)$}
+\end{document}
