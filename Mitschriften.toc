@@ -8,4 +8,7 @@
 \contentsline {section}{\numberline {2.3}Taylorpolynome}{9}{section.2.3}%
 \contentsline {section}{\numberline {2.4}Extrempunkte, Maxima, Minima}{11}{section.2.4}%
 \contentsline {chapter}{\numberline {3}Hyperflächen und Satz über implizite Funktionen}{12}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Hyperflächen}{12}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Tangentialraum}{13}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Satz über implizite Funktionen}{13}{section.3.3}%
 \contentsfinish 

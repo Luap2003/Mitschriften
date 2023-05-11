@@ -342,7 +342,8 @@ $$
 Folglich hat die Funktion in (0,0) ein lokales Minima.
 }
 \chapter{Hyperflächen und Satz über implizite Funktionen}
-\dfn{Hyperflächen}{Sei $f:\mathbb{R}^n \to \mathbb{R}$ eine differenzierbare Funktion. Dann heißt ihre Nullstellenmenge
+\section{Hyperflächen}
+\dfn{}{Sei $f:\mathbb{R}^n \to \mathbb{R}$ eine differenzierbare Funktion. Dann heißt ihre Nullstellenmenge
 $$N(f):=N_0(f)=\{a\in \mathbb{R}^n\mid f(a)=0\}$$
 die durch $f$ definierte Hyperfläche.
 }
@@ -353,6 +354,39 @@ die durch $f$ definierte Hyperfläche.
     \caption{Eine 3-dimensionale Kugel mit dem Radius 1}
     \label{fig:kreis}
 \end{figure}
-\dfn{Tengentialraum}{Sei $X=N(f)$, $f$ stetig differenzierbar, eine Hyperfläche und $a\in X$. Ist 
-$$f(x) = f(a) + \sum_{\left|\alpha\right|\leq 1}\frac{df}{dx}$$}
+\section{Tangentialraum}
+\dfn{}{Sei $X=N(f)$, $f$ stetig differenzierbar, eine Hyperfläche und $a \in X$. Dann ist
+$$
+f(x)=f(a)+\sum_{j=1}^n \frac{\partial f}{\partial x_j}(a)\left(x_j-a_j\right)+\sigma(\|x-a\|)
+$$
+die erste Taylorformel (zum Landau Syubol $\sigma(1 )$)
+\footnote{Ich denke das hier einfach der Rest Term eines Taylorpolynoms gemeint ist und das dieser langsamer wächst als $\|\|x-a\|\|\iff o(\|\|x-a\|\|)$}, so heißt
+$$
+T_a x=\left\{x \in \mathbb{R}^n \mid \sum_{j=1}^n \frac{\partial f}{\partial x_j}(a)\left(x_j-a\right)=0\right\}
+$$
+der Tangentialraum von $X$ im Punkt $a$}
+\cor{Glatt oder Singulär}{$T_a X$ ist der zu $\operatorname{grad} f(a)$ orthogonale Untervektorraum:
+$$
+\left\{x \in \mathbb{R}^n \mid\langle\operatorname{grad} f(a), x\rangle=0\right\}
+$$
+Falls $\operatorname{grad} f(a) \neq 0$, ist $T_a X$ eine Hyperebene und $x$ ist glatt in a. Andernfalls ist $T_a X$ der gesamte Raum und $x$ ist singulär in a.
+
+In dieser überarbeiteten Formulierung beschreibt der Tangentialraum $T_a X$ den Untervektorraum, der orthogonal zum Gradienten von f an der Stelle a ist. Der Gradient von f, oft als $\operatorname{grad} f(a)$ bezeichnet, gibt die Richtung des steilsten Anstiegs der Funktion f an der Stelle a an.
+
+Wenn der Gradient von f an der Stelle a ungleich Null ist, bildet der Tangentialraum eine Hyperebene, und die Funktion ist glatt (d. h. differenzierbar) an der Stelle a. Wenn der Gradient jedoch gleich Null ist, entspricht der Tangentialraum dem gesamten Raum, und die Funktion hat an der Stelle a einen singulären Punkt (d. h. sie ist möglicherweise nicht differenzierbar oder hat einen kritischen Punkt).}
+\section{Satz über implizite Funktionen}
+\dfn{}{Sei $U \subset \mathbb{R}^n$ offen, $f: U \rightarrow \mathbb{R}$ mal stetig differenzierbar und
+\begin{equation}
+a=\left(a_1, \ldots, a_{n-1}, a_n\right) \in N(f),
+\end{equation}
+gilt $\frac{\partial f}{\partial x_n}(a) \neq 0$, dann existieren offene Umgebungen $V^{\prime} \subset \mathbb{R}^{n-1}$ von $\left(a_1, \ldots, a_{n-1}\right)=: a^{\prime}$ und $V^{\prime \prime} \subset \mathbb{R}$ von $a_n=: a^{\prime \prime}$ mit $V^{\prime} \times V^{\prime \prime} \subset U$ und es existiert eine Funktion $g: V^{\prime} \rightarrow V^{\prime \prime}$ und $g\left(a^{\prime}\right)=a^{\prime \prime}$ und
+\begin{enumerate}
+    \item $f\left(x_1, \ldots, x_{n-1}, g\left(x_1, \ldots, x_{n-1}\right)\right)=0$ $\forall x^{\prime}=\left(x_1, \ldots, x_{n-1}\right) \in V^{\prime}$ und
+    \item $\forall\left(x^{\prime}, x^{\prime \prime}\right) \in\left(V^{\prime} \times V^{\prime \prime}\right) \cap N(f)$ gilt $x^{\prime \prime}=x_n=g\left(x^{\prime}\right)$.
+\end{enumerate}
+$g$ ist lokal stetig differenzierbar und
+\begin{equation}
+\frac{\partial g}{\partial x_i}\left(a^{\prime}\right)=-\frac{\partial f}{\partial x_i}(a) / \frac{\partial f}{\partial x_n}(a) \quad \text{für } i=1, \ldots, n-1 .
+\end{equation}}
+\nt{Grundlegend besagt der Satz, dass wenn eine Gleichung in der Form $f(x_1, x_2, \ldots, x_n) = 0$ eine Funktion implizit definiert und bestimmte Regularitätsbedingungen erfüllt sind, dann kann man die Ableitungen dieser impliziten Funktion berechnen, ohne sie explizit zu lösen.}
 \end{document}
