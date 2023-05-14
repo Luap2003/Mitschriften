@@ -389,4 +389,67 @@ $g$ ist lokal stetig differenzierbar und
 \frac{\partial g}{\partial x_i}\left(a^{\prime}\right)=-\frac{\partial f}{\partial x_i}(a) / \frac{\partial f}{\partial x_n}(a) \quad \text{für } i=1, \ldots, n-1 .
 \end{equation}}
 \nt{Grundlegend besagt der Satz, dass wenn eine Gleichung in der Form $f(x_1, x_2, \ldots, x_n) = 0$ eine Funktion implizit definiert und bestimmte Regularitätsbedingungen erfüllt sind, dann kann man die Ableitungen dieser impliziten Funktion berechnen, ohne sie explizit zu lösen.}
+\chapter{Integration im $\mathbb{R}^n$}
+\section{Doppelintegral}
+\dfn{}{Der Grenzwert
+$$
+\lim_{\substack{h \to \infty \\ \Delta A_k \to 0}} \sum_{k=1}^h f(x_k, y_k) \Delta A_k
+$$
+wird (falls er existiert) als Doppelintegral bezeichnet und durch 
+$$
+\iint_A f(x, y) dA
+$$
+gekennzeichnet.}
+\nt{Angenommen, die Fläche A ist in M Reihen und N Spalten unterteilt, 
+wobei die Breite der iten Spalte $\Delta \mathrm{x}_{-}$i und die Höhe der j-ten Reihe $\Delta \mathrm{y}_{-}$j ist.\newline
+Die Fläche der kleinen rechteckigen Teilfläche an der Position (i, j) ist dann $\Delta \mathrm{A}_{-} \mathrm{ij}=\Delta \mathrm{x}_{-} \mathrm{i} \Delta \mathrm{y}_{-} \mathrm{j}$.
+$$S=\sum_{i=1}^M \sum_{j=1}^N f\left(x_{i j}, y_{i j}\right) \Delta A_{i j}$$
+Der Grenzwert dieser Flächen ist dann das Integral, in Abb: \ref{fig:Doppelintegral} ist eine solche Teilfäche zu sehen
+$$
+\iint_A f(x, y) d A=\lim _{\substack{\Delta x_i, \Delta y_j \rightarrow 0 \\ M, N \rightarrow \infty}} \sum_{i=1}^M \sum_{j=1}^N f\left(x_{i j}, y_{i j}\right) \Delta A_{i j}
+$$
+Ich finde diese Formel etwas intuitiver, da klar ist was $k$ und $\delta A_k$ sind. 
+\newline
+In Bezug auf ihre Integrationsgrenzen ergibt sich 
+$$
+\iint_A f(x, y) d A=\int_a^b \int_c^d f(x, y) d y d x
+$$
+    \begin{figure}[H]
+        \centering
+        \includegraphics*[scale=0.1]{Bilder/Surface_integral1.png}
+        \caption{
+            Eine Illustration eines einzelnen Oberflächenelements. Diese Elemente werden durch den Integrierungsprozess unendlich klein gemacht, um sich der Oberfläche anzunähern.}
+        \label{fig:Doppelintegral}
+        \end{figure}
+        $$
+        \iint_A f(x, y) d t=\int_{x=a}^b \underbrace{\int_{y=f_u(x)}^{f_0(x)} f(x, y) d y}_{\text {Inneres Integral }} d x
+        $$
+        Das innere Integral wird für unendlcih viele infintisemal wenig aus einanderliegernde $x$ berechnet.
+        Dann werden all diese Integrale, genau wie bei einem einfachen Integral Funktionswerte, integriert.
+        \newline
+        In der Abb \ref*{fig:Doppelintegral_innere} ist bspw. das innere Integral für $x=0$ zu sehen.
+    \begin{figure}[H]
+        \centering
+        \includegraphics*[scale=0.5]{Bilder/DoppelIntegralInnere.png}
+        \caption{
+            Die Funktion $f(x,y)=x^2+y^2$ und eine herausgeschnittene Scheibe $\int f(0,y)dy$}
+        \label{fig:Doppelintegral_innere}
+        \end{figure}        
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \end{document}

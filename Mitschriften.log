@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.7)  11 MAY 2023 22:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.7)  15 MAY 2023 01:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -948,146 +948,179 @@ Package: transparent-nometadata 2022-10-27 v1.5 Transparency via pdfTeX's color 
 Package: eucal 2009/06/22 v3.00 Euler Script fonts
 LaTeX Font Info:    Overwriting math alphabet `\EuScript' in version `bold'
 (Font)                  U/eus/m/n --> U/eus/b/n on input line 33.
-) (/home/luap/.miktex/texmfs/install/tex/latex/tikzsymbols/tikzsymbols.sty
-Package: tikzsymbols 2021/12/14 v4.12a Some symbols created using tikz and LaTeX3.
- (/home/luap/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
- (/home/luap/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
-File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
-\arrowsize=\dimen322
-)) (/home/luap/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/home/luap/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/home/luap/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+) (/home/luap/.miktex/texmfs/install/tex/latex/pgfplots/pgfplots.sty (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+ (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.code.tex (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks54
+\t@pgfplots@tokb=\toks55
+\t@pgfplots@tokc=\toks56
+\pgfplots@tmpa=\dimen322
+\c@pgfplots@coordindex=\count358
+\c@pgfplots@scanlineindex=\count359
+ (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/sys/pgfplotssysgeneric.code.tex)) (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/libs/pgfplotslibrary.code.tex) (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_loader.code.tex (/home/luap/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryfpu.code.tex)
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks57
+\t@pgf@tokb=\toks58
+\t@pgf@tokc=\toks59
+(/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotsutil.code.tex (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsliststructure.code.tex) (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsliststructureext.code.tex) (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count360
+) (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsmatrix.code.tex) (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/numtable/pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count361
+\t@pgfplotstable@a=\toks60
+) (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/liststructure/pgfplotsdeque.code.tex) (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotsbinary.code.tex (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotsbinary.data.code.tex)) (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotsutil.verb.code.tex) (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/libs/pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count362
+ (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/sys/pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotscolormap.code.tex (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/util/pgfplotscolor.code.tex)) (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsstackedplots.code.tex) (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsplothandlers.code.tex (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsmeshplothandler.code.tex (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsmeshplotimage.code.tex))) (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.scaling.code.tex) (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotscoordprocessing.code.tex) (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.errorbars.code.tex) (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.markers.code.tex) (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/pgfplotsticks.code.tex) (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/pgfplots.paths.code.tex) (/home/luap/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/home/luap/.miktex/texmfs/install/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
 \pgfdecoratedcompleteddistance=\dimen323
 \pgfdecoratedremainingdistance=\dimen324
 \pgfdecoratedinputsegmentcompleteddistance=\dimen325
 \pgfdecoratedinputsegmentremainingdistance=\dimen326
 \pgf@decorate@distancetomove=\dimen327
-\pgf@decorate@repeatstate=\count358
+\pgf@decorate@repeatstate=\count363
 \pgfdecorationsegmentamplitude=\dimen328
 \pgfdecorationsegmentlength=\dimen329
 )
 \tikz@lib@dec@box=\box141
-) (/home/luap/.miktex/texmfs/install/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/home/luap/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytrees.code.tex
+) (/home/luap/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex (/home/luap/.miktex/texmfs/install/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathmorphing.code.tex)) (/home/luap/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex (/home/luap/.miktex/texmfs/install/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.pathreplacing.code.tex)) (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/libs/tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count364
+\pgfplots@xmin@reg=\dimen330
+\pgfplots@xmax@reg=\dimen331
+\pgfplots@ymin@reg=\dimen332
+\pgfplots@ymax@reg=\dimen333
+\pgfplots@zmin@reg=\dimen334
+\pgfplots@zmax@reg=\dimen335
+) (/home/luap/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (/home/luap/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2023-01-15 v3.1.10 (3.1.10)
+))) (/home/luap/.miktex/texmfs/install/tex/generic/pgfplots/libs/tikzlibrarypgfplots.patchplots.code.tex) (/home/luap/.miktex/texmfs/install/tex/latex/tikzsymbols/tikzsymbols.sty
+Package: tikzsymbols 2021/12/14 v4.12a Some symbols created using tikz and LaTeX3.
+ (/home/luap/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+ (/home/luap/.miktex/texmfs/install/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+File: pgflibraryarrows.code.tex 2023-01-15 v3.1.10 (3.1.10)
+\arrowsize=\dimen336
+)) (/home/luap/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytrees.code.tex
 File: tikzlibrarytrees.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-\l__tikzsymbols_Moai_thickness_dim=\dimen330
-\l__tikzsymbols_Kochtopf_nr_arguments_int=\count359
-\l__tikzsymbols_Bratpfanne_nr_arguments_int=\count360
-\l__tikzsymbols_Schneebesen_nr_arguments_int=\count361
-\l__tikzsymbols_Sieb_nr_arguments_int=\count362
-\l__tikzsymbols_Purierstab_nr_arguments_int=\count363
-\l__tikzsymbols_Dreizack_nr_arguments_int=\count364
-\l__tikzsymbols_Backblech_nr_arguments_int=\count365
-\l__tikzsymbols_Ofen_nr_arguments_int=\count366
-\l__tikzsymbols_Pfanne_nr_arguments_int=\count367
-\l__tikzsymbols_Herd_nr_arguments_int=\count368
-\l__tikzsymbols_Saftpresse_nr_arguments_int=\count369
-\l__tikzsymbols_Schussel_nr_arguments_int=\count370
-\l__tikzsymbols_Schaler_nr_arguments_int=\count371
-\l__tikzsymbols_Reibe_nr_arguments_int=\count372
-\l__tikzsymbols_Flasche_nr_arguments_int=\count373
-\l__tikzsymbols_Nudelholz_nr_arguments_int=\count374
-\l__tikzsymbols_Knoblauchpresse_nr_arguments_int=\count375
-\l__tikzsymbols_Sadey_nr_arguments_int=\count376
-\l__tikzsymbols_dSadey_nr_arguments_int=\count377
-\l__tikzsymbols_Changey_nr_arguments_int=\count378
-\l__tikzsymbols_dChangey_nr_arguments_int=\count379
-\l__tikzsymbols_cChangey_nr_arguments_int=\count380
-\l__tikzsymbols_dcChangey_nr_arguments_int=\count381
-\l__tikzsymbols_Annoey_nr_arguments_int=\count382
-\l__tikzsymbols_dAnnoey_nr_arguments_int=\count383
-\l__tikzsymbols_Smiley_nr_arguments_int=\count384
-\l__tikzsymbols_dSmiley_nr_arguments_int=\count385
-\l__tikzsymbols_Laughey_nr_arguments_int=\count386
-\l__tikzsymbols_dLaughey_nr_arguments_int=\count387
-\l__tikzsymbols_Neutrey_nr_arguments_int=\count388
-\l__tikzsymbols_dNeutrey_nr_arguments_int=\count389
-\l__tikzsymbols_Winkey_nr_arguments_int=\count390
-\l__tikzsymbols_oldWinkey_nr_arguments_int=\count391
-\l__tikzsymbols_dWinkey_nr_arguments_int=\count392
-\l__tikzsymbols_olddWinkey_nr_arguments_int=\count393
-\l__tikzsymbols_Sey_nr_arguments_int=\count394
-\l__tikzsymbols_dSey_nr_arguments_int=\count395
-\l__tikzsymbols_Xey_nr_arguments_int=\count396
-\l__tikzsymbols_dXey_nr_arguments_int=\count397
-\l__tikzsymbols_Innocey_nr_arguments_int=\count398
-\l__tikzsymbols_wInnocey_nr_arguments_int=\count399
-\l__tikzsymbols_dInnocey_nr_arguments_int=\count400
-\l__tikzsymbols_Cooley_nr_arguments_int=\count401
-\l__tikzsymbols_dCooley_nr_arguments_int=\count402
-\l__tikzsymbols_Tongey_nr_arguments_int=\count403
-\l__tikzsymbols_dTongey_nr_arguments_int=\count404
-\l__tikzsymbols_Nursey_nr_arguments_int=\count405
-\l__tikzsymbols_dNursey_nr_arguments_int=\count406
-\l__tikzsymbols_Vomey_nr_arguments_int=\count407
-\l__tikzsymbols_dVomey_nr_arguments_int=\count408
-\l__tikzsymbols_Walley_nr_arguments_int=\count409
-\l__tikzsymbols_rWalley_nr_arguments_int=\count410
-\l__tikzsymbols_dWalley_nr_arguments_int=\count411
-\l__tikzsymbols_drWalley_nr_arguments_int=\count412
-\l__tikzsymbols_Cat_nr_arguments_int=\count413
-\l__tikzsymbols_SchrodingersCat_nr_arguments_int=\count414
-\l__tikzsymbols_Ninja_nr_arguments_int=\count415
-\l__tikzsymbols_dNinja_nr_arguments_int=\count416
-\l__tikzsymbols_Sleepey_nr_arguments_int=\count417
-\l__tikzsymbols_dSleepey_nr_arguments_int=\count418
-\l__tikzsymbols_Maskey_nr_arguments_int=\count419
-\l__tikzsymbols_NiceReapey_nr_arguments_int=\count420
-\l__tikzsymbols_Strichmaxerl_nr_arguments_int=\count421
-\l__tikzsymbols_Person_nr_arguments_int=\count422
-\l__tikzsymbols_Heart_nr_arguments_int=\count423
-\l__tikzsymbols_dHeart_nr_arguments_int=\count424
-\l__tikzsymbols_HeartBroken_nr_arguments_int=\count425
-\l__tikzsymbols_Candle_nr_arguments_int=\count426
-\l__tikzsymbols_Fire_nr_arguments_int=\count427
-\l__tikzsymbols_Coffeecup_nr_arguments_int=\count428
-\l__tikzsymbols_Chair_nr_arguments_int=\count429
-\l__tikzsymbols_Bed_nr_arguments_int=\count430
-\l__tikzsymbols_Tribar_nr_arguments_int=\count431
-\l__tikzsymbols_Moai_nr_arguments_int=\count432
-\l__tikzsymbols_Snowman_nr_arguments_int=\count433
-\l__tikzsymbols_BasicTree_nr_arguments_int=\count434
-\l__tikzsymbols_WorstTree_nr_arguments_int=\count435
-\l__tikzsymbols_Springtree_nr_arguments_int=\count436
-\l__tikzsymbols_Summertree_nr_arguments_int=\count437
-\l__tikzsymbols_Autumntree_nr_arguments_int=\count438
-\l__tikzsymbols_Wintertree_nr_arguments_int=\count439
+\l__tikzsymbols_Moai_thickness_dim=\dimen337
+\l__tikzsymbols_Kochtopf_nr_arguments_int=\count365
+\l__tikzsymbols_Bratpfanne_nr_arguments_int=\count366
+\l__tikzsymbols_Schneebesen_nr_arguments_int=\count367
+\l__tikzsymbols_Sieb_nr_arguments_int=\count368
+\l__tikzsymbols_Purierstab_nr_arguments_int=\count369
+\l__tikzsymbols_Dreizack_nr_arguments_int=\count370
+\l__tikzsymbols_Backblech_nr_arguments_int=\count371
+\l__tikzsymbols_Ofen_nr_arguments_int=\count372
+\l__tikzsymbols_Pfanne_nr_arguments_int=\count373
+\l__tikzsymbols_Herd_nr_arguments_int=\count374
+\l__tikzsymbols_Saftpresse_nr_arguments_int=\count375
+\l__tikzsymbols_Schussel_nr_arguments_int=\count376
+\l__tikzsymbols_Schaler_nr_arguments_int=\count377
+\l__tikzsymbols_Reibe_nr_arguments_int=\count378
+\l__tikzsymbols_Flasche_nr_arguments_int=\count379
+\l__tikzsymbols_Nudelholz_nr_arguments_int=\count380
+\l__tikzsymbols_Knoblauchpresse_nr_arguments_int=\count381
+\l__tikzsymbols_Sadey_nr_arguments_int=\count382
+\l__tikzsymbols_dSadey_nr_arguments_int=\count383
+\l__tikzsymbols_Changey_nr_arguments_int=\count384
+\l__tikzsymbols_dChangey_nr_arguments_int=\count385
+\l__tikzsymbols_cChangey_nr_arguments_int=\count386
+\l__tikzsymbols_dcChangey_nr_arguments_int=\count387
+\l__tikzsymbols_Annoey_nr_arguments_int=\count388
+\l__tikzsymbols_dAnnoey_nr_arguments_int=\count389
+\l__tikzsymbols_Smiley_nr_arguments_int=\count390
+\l__tikzsymbols_dSmiley_nr_arguments_int=\count391
+\l__tikzsymbols_Laughey_nr_arguments_int=\count392
+\l__tikzsymbols_dLaughey_nr_arguments_int=\count393
+\l__tikzsymbols_Neutrey_nr_arguments_int=\count394
+\l__tikzsymbols_dNeutrey_nr_arguments_int=\count395
+\l__tikzsymbols_Winkey_nr_arguments_int=\count396
+\l__tikzsymbols_oldWinkey_nr_arguments_int=\count397
+\l__tikzsymbols_dWinkey_nr_arguments_int=\count398
+\l__tikzsymbols_olddWinkey_nr_arguments_int=\count399
+\l__tikzsymbols_Sey_nr_arguments_int=\count400
+\l__tikzsymbols_dSey_nr_arguments_int=\count401
+\l__tikzsymbols_Xey_nr_arguments_int=\count402
+\l__tikzsymbols_dXey_nr_arguments_int=\count403
+\l__tikzsymbols_Innocey_nr_arguments_int=\count404
+\l__tikzsymbols_wInnocey_nr_arguments_int=\count405
+\l__tikzsymbols_dInnocey_nr_arguments_int=\count406
+\l__tikzsymbols_Cooley_nr_arguments_int=\count407
+\l__tikzsymbols_dCooley_nr_arguments_int=\count408
+\l__tikzsymbols_Tongey_nr_arguments_int=\count409
+\l__tikzsymbols_dTongey_nr_arguments_int=\count410
+\l__tikzsymbols_Nursey_nr_arguments_int=\count411
+\l__tikzsymbols_dNursey_nr_arguments_int=\count412
+\l__tikzsymbols_Vomey_nr_arguments_int=\count413
+\l__tikzsymbols_dVomey_nr_arguments_int=\count414
+\l__tikzsymbols_Walley_nr_arguments_int=\count415
+\l__tikzsymbols_rWalley_nr_arguments_int=\count416
+\l__tikzsymbols_dWalley_nr_arguments_int=\count417
+\l__tikzsymbols_drWalley_nr_arguments_int=\count418
+\l__tikzsymbols_Cat_nr_arguments_int=\count419
+\l__tikzsymbols_SchrodingersCat_nr_arguments_int=\count420
+\l__tikzsymbols_Ninja_nr_arguments_int=\count421
+\l__tikzsymbols_dNinja_nr_arguments_int=\count422
+\l__tikzsymbols_Sleepey_nr_arguments_int=\count423
+\l__tikzsymbols_dSleepey_nr_arguments_int=\count424
+\l__tikzsymbols_Maskey_nr_arguments_int=\count425
+\l__tikzsymbols_NiceReapey_nr_arguments_int=\count426
+\l__tikzsymbols_Strichmaxerl_nr_arguments_int=\count427
+\l__tikzsymbols_Person_nr_arguments_int=\count428
+\l__tikzsymbols_Heart_nr_arguments_int=\count429
+\l__tikzsymbols_dHeart_nr_arguments_int=\count430
+\l__tikzsymbols_HeartBroken_nr_arguments_int=\count431
+\l__tikzsymbols_Candle_nr_arguments_int=\count432
+\l__tikzsymbols_Fire_nr_arguments_int=\count433
+\l__tikzsymbols_Coffeecup_nr_arguments_int=\count434
+\l__tikzsymbols_Chair_nr_arguments_int=\count435
+\l__tikzsymbols_Bed_nr_arguments_int=\count436
+\l__tikzsymbols_Tribar_nr_arguments_int=\count437
+\l__tikzsymbols_Moai_nr_arguments_int=\count438
+\l__tikzsymbols_Snowman_nr_arguments_int=\count439
+\l__tikzsymbols_BasicTree_nr_arguments_int=\count440
+\l__tikzsymbols_WorstTree_nr_arguments_int=\count441
+\l__tikzsymbols_Springtree_nr_arguments_int=\count442
+\l__tikzsymbols_Summertree_nr_arguments_int=\count443
+\l__tikzsymbols_Autumntree_nr_arguments_int=\count444
+\l__tikzsymbols_Wintertree_nr_arguments_int=\count445
 )
-\c@tcb@cnt@Theorem=\count440
-\c@tcb@cnt@theorem=\count441
-\c@tcb@cnt@Corollary=\count442
-\c@tcb@cnt@corollary=\count443
-\c@tcb@cnt@Lenma=\count444
-\c@tcb@cnt@lenma=\count445
-\c@tcb@cnt@Prop=\count446
-\c@tcb@cnt@prop=\count447
-\c@tcb@cnt@claim=\count448
-\c@tcb@cnt@Exercise=\count449
-\c@tcb@cnt@exercise=\count450
-\c@tcb@cnt@Example=\count451
-\c@tcb@cnt@example=\count452
-\c@tcb@cnt@Definition=\count453
-\c@tcb@cnt@definition=\count454
-\c@tcb@cnt@question=\count455
-\c@tcb@cnt@qstion=\count456
-\c@tcb@cnt@wconc=\count457
+\c@tcb@cnt@Theorem=\count446
+\c@tcb@cnt@theorem=\count447
+\c@tcb@cnt@Corollary=\count448
+\c@tcb@cnt@corollary=\count449
+\c@tcb@cnt@Lenma=\count450
+\c@tcb@cnt@lenma=\count451
+\c@tcb@cnt@Prop=\count452
+\c@tcb@cnt@prop=\count453
+\c@tcb@cnt@claim=\count454
+\c@tcb@cnt@Exercise=\count455
+\c@tcb@cnt@exercise=\count456
+\c@tcb@cnt@Example=\count457
+\c@tcb@cnt@example=\count458
+\c@tcb@cnt@Definition=\count459
+\c@tcb@cnt@definition=\count460
+\c@tcb@cnt@question=\count461
+\c@tcb@cnt@qstion=\count462
+\c@tcb@cnt@wconc=\count463
  (/home/luap/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2023-01-15 v3.1.10 (3.1.10)
 ) (/home/luap/.miktex/texmfs/install/tex/latex/pgf-blur/tikzlibraryshadows.blur.code.tex  v1.02, 2012/12/09 (/home/luap/.miktex/texmfs/install/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryshadows.code.tex
 File: tikzlibraryshadows.code.tex 2023-01-15 v3.1.10 (3.1.10)
 )
-\pgfbs@fading@count=\count458
+\pgfbs@fading@count=\count464
 )
-\c@mylabelcounter=\count459
+\c@mylabelcounter=\count465
 \diffdbox=\box142
  (/home/luap/.miktex/texmfs/install/tex/latex/titlesec/titletoc.sty
 Package: titletoc 2021/07/05 v2.14 TOC entries
-\ttl@leftsep=\dimen331
+\ttl@leftsep=\dimen338
 ) (/home/luap/.miktex/texmfs/install/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count460
-\float@exts=\toks54
+\c@float@type=\count466
+\float@exts=\toks61
 \float@box=\box143
-\@float@everytoks=\toks55
+\@float@everytoks=\toks62
 \@floatcapt=\box144
 )) (macros.tex) (letterfonts.tex) (Mitschriften.aux)
 \openout1 = `Mitschriften.aux'.
@@ -1169,17 +1202,17 @@ LaTeX Info: Command `\dddot' is already robust on input line 11.
 LaTeX Info: Command `\ddddot' is already robust on input line 11.
 (/home/luap/.miktex/texmfs/install/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count461
-\scratchdimen=\dimen332
+\scratchcounter=\count467
+\scratchdimen=\dimen339
 \scratchbox=\box145
-\nofMPsegments=\count462
-\nofMParguments=\count463
-\everyMPshowfont=\toks56
-\MPscratchCnt=\count464
-\MPscratchDim=\dimen333
-\MPnumerator=\count465
-\makeMPintoPDFobject=\count466
-\everyMPtoPDFconversion=\toks57
+\nofMPsegments=\count468
+\nofMParguments=\count469
+\everyMPshowfont=\toks63
+\MPscratchCnt=\count470
+\MPscratchDim=\dimen340
+\MPnumerator=\count471
+\makeMPintoPDFobject=\count472
+\everyMPtoPDFconversion=\toks64
 ) (/home/luap/.miktex/texmfs/install/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -1187,11 +1220,11 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
 Package hyperref Info: Link coloring ON on input line 11.
-\c@lstlisting=\count467
+\c@lstlisting=\count473
  (/home/luap/.miktex/texmfs/install/tex/latex/base/inputenc.sty
 Package: inputenc 2021/02/14 v1.3d Input encoding file
-\inpenc@prehook=\toks58
-\inpenc@posthook=\toks59
+\inpenc@prehook=\toks65
+\inpenc@posthook=\toks66
 ) (/home/luap/.miktex/texmfs/install/tex/latex/pdflscape/pdflscape.sty
 Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
  (/home/luap/.miktex/texmfs/install/tex/latex/pdflscape/pdflscape-nometadata.sty
@@ -1201,8 +1234,10 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
+Package pgfplots notification 'compat/show suggested version=true': you might benefit from \pgfplotsset{compat=1.18} (current compat level: 1.15).
+
 LaTeX Font Info:    Trying to load font information for U+msa on input line 15.
- (/home/luap/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
+(/home/luap/.miktex/texmfs/install/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 15.
@@ -1234,6 +1269,7 @@ Missing character: There is no ; in font nullfont!
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <5.5> not available
 (Font)              size <5> substituted on input line 1.
 
+Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
@@ -1298,12 +1334,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 51.
 
 [3]
-<Bilder/F.pdf, id=136, 191.71625pt x 239.89626pt>
+<Bilder/F.pdf, id=142, 191.71625pt x 239.89626pt>
 File: Bilder/F.pdf Graphic file (type pdf)
 <use Bilder/F.pdf>
 Package pdftex.def Info: Bilder/F.pdf  used on input line 85.
 (pdftex.def)             Requested size: 191.71577pt x 239.89566pt.
-<Bilder/F_countour.pdf, id=137, 191.71625pt x 186.6975pt>
+<Bilder/F_countour.pdf, id=143, 191.71625pt x 186.6975pt>
 File: Bilder/F_countour.pdf Graphic file (type pdf)
 <use Bilder/F_countour.pdf>
 Package pdftex.def Info: Bilder/F_countour.pdf  used on input line 87.
@@ -1321,7 +1357,7 @@ Chapter 2.
 [7
 
 ] [8] [9]
-<Bilder/Taylopolynome.png, id=233, 2775.168pt x 1492.3755pt>
+<Bilder/Taylopolynome.png, id=239, 2775.168pt x 1492.3755pt>
 File: Bilder/Taylopolynome.png Graphic file (type png)
 <use Bilder/Taylopolynome.png>
 Package pdftex.def Info: Bilder/Taylopolynome.png  used on input line 302.
@@ -1333,7 +1369,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) h
 l.315 }
         <./Bilder/Taylopolynome.png>] [11]
 Chapter 3.
-<Bilder/Kugel.pdf, id=253, 235.88126pt x 238.8925pt>
+<Bilder/Kugel.pdf, id=259, 235.88126pt x 238.8925pt>
 File: Bilder/Kugel.pdf Graphic file (type pdf)
 <use Bilder/Kugel.pdf>
 Package pdftex.def Info: Bilder/Kugel.pdf  used on input line 353.
@@ -1345,7 +1381,47 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) h
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.376 ...ierbar oder hat einen kritischen Punkt).}
-                                                   <./Bilder/Kugel.pdf>] [13] [14] (Mitschriften.aux)
+                                                   <./Bilder/Kugel.pdf>] [13] [14]
+Chapter 4.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 392.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\m@thbbch@rR' on input line 392.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `superscript' on input line 392.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 392.
+
+<Bilder/Surface_integral1.png, id=304, 1927.2pt x 1909.1325pt>
+File: Bilder/Surface_integral1.png Graphic file (type png)
+<use Bilder/Surface_integral1.png>
+Package pdftex.def Info: Bilder/Surface_integral1.png  used on input line 438.
+(pdftex.def)             Requested size: 192.7313pt x 190.92444pt.
+<Bilder/DoppelIntegralInnere.png, id=306, 580.3281pt x 443.0151pt>
+File: Bilder/DoppelIntegralInnere.png Graphic file (type png)
+<use Bilder/DoppelIntegralInnere.png>
+Package pdftex.def Info: Bilder/DoppelIntegralInnere.png  used on input line 438.
+(pdftex.def)             Requested size: 290.16333pt x 221.507pt.
+[15
+
+] [16
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.455 \end{document}
+                    
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.455 \end{document}
+                     <./Bilder/Surface_integral1.png> <./Bilder/DoppelIntegralInnere.png>] (Mitschriften.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.97499pt have occurred.
@@ -1355,17 +1431,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 38013 strings out of 478274
- 766464 string characters out of 5839820
+ 48077 strings out of 478274
+ 1107147 string characters out of 5839820
  1885388 words of memory out of 5000000
- 57392 multiletter control sequences out of 15000+600000
- 593761 words of font info for 262 fonts, out of 8000000 for 9000
+ 67318 multiletter control sequences out of 15000+600000
+ 594109 words of font info for 264 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 99i,15n,102p,732b,1729s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</home/luap/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti7.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/txfonts/txsya.pfb>
-Output written on Mitschriften.pdf (15 pages, 1183832 bytes).
+ 99i,15n,102p,813b,1741s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</home/luap/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti7.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newtx/txexas.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/txfonts/txsya.pfb>
+Output written on Mitschriften.pdf (17 pages, 1437010 bytes).
 PDF statistics:
- 428 PDF objects out of 1000 (max. 8388607)
- 76 named destinations out of 1000 (max. 500000)
- 427 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 470 PDF objects out of 1000 (max. 8388607)
+ 83 named destinations out of 1000 (max. 500000)
+ 477 words of extra memory for PDF output out of 10000 (max. 10000000)
 
