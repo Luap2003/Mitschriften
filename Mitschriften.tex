@@ -599,7 +599,7 @@ $\varphi \psi$ sind stetig
 $$
 \begin{aligned}
 & \varphi_r=\cos \varphi \quad \varphi_{\varphi}=-r \sin \varphi \\
-& \psi_r=\sin \varphi \quad \psi_{\varphi}=r \cos \varphi \\
+& \psi_r=\sin \varphi \quad \psi_{\psi}=r \cos \varphi \\
 &
 \end{aligned}
 $$
@@ -607,8 +607,8 @@ Funktional determinante
 $$
 \begin{aligned}
 \operatorname{det}\left[\begin{array}{cc}
-\varphi r & \varphi \varphi \\
-4 r & \psi \varphi
+\varphi_r & \varphi_\varphi \\
+\psi_r & \psi_\psi
 \end{array}\right] & =\operatorname{det}\left[\begin{array}{cc}
 \cos \varphi & -r \sin \varphi \\
 \sin \varphi & r \cos \varphi
@@ -650,9 +650,60 @@ Ist $m$ die untere, $M$ die obere grenze von $f$ in $B(m \leqslant M)$ und ist $
 $$
 m|B|=\iint_R f(x, y) d B \leq M|B|
 $$
+\textbf{Mittelwertsatz:}
+Wenn $f$ auf $B$ stetig ist, so existiert auf $B$ mindestens eine Stelle $(\xi, \eta)$ mit
+$$
+\iint_B f(x, y) d B=f(\xi, \eta)|B|
+$$
 }
+\section{Dreifach-Integrale}
+\dfn{}{Der Grenzwert
+$$
+\lim _{\substack{\Delta v_k \rightarrow 0}} \sum_{k=1}^{\infty} f\left(x_k, y_k, z_k\right) \Delta v_k
+$$
+wird (falls er existiert) alo Dreifach-Integral bezeichnet und duch das Symbol
+$$
+\iiint_V f(x, y, z) d V
+$$
+gekennzeichnet.}
+\ex{}{Wenn $f:\mathbb{R}^3\to \mathbb{R}$ ist diese sehr schwer vorstellbar und vorallem nicht visualisierbar.\newline
+Da der Funktionswert $f(x,y,z)$ nicht mehr eine Koordinate im kartesischen Koordinatensystem darstellt sondern eine gewisse Eigenschaft des Punktes $(x,y,z)$.\newline
+In vielen Anwendungen wie in der Physik, könnte dies aber ausgenutzt werden. Sei 
+$$
+B=\{(x,y,z)\in\mathbb{R}^3\mid x^2+y^2+z^2 = 1\wedge x\geq 0 \wedge y\geq 0 \wedge z\geq 0 \}
+$$
+\begin{center}
+    \begin{tikzpicture}
+        % Kugel zeichnen
+        \shade[ball color = gray!40, opacity = 0.4] (0,0) circle (2cm);
+        \fill[fill=black] (0,0) circle (1pt);
+        % Achsen zeichnen
+        \draw[thick,->] (0, 0) -- (2.5, 0) node[anchor=north east]{$y$};
+        \draw[thick,->] (0, 0) -- (0, 2.5) node[anchor=north west]{$z$};
+        \draw[thick,->] (0, 0) -- (0,0,3.533) node[anchor=south]{$x$};
+    \end{tikzpicture}
+\end{center}
 
-
+Dann ist der Körper die Kugel und $f(x,y,z)$ kann jetzt eine Eigenschaft über jeden der inneren Punkt beschreiben,
+bspw. die Dichte an dieser Stelle und dann wäre das Dreifachintegral gerade die Masse dieser Kugel.\newline
+An diesem Beispiel lässt sich auch sehr gut die Formel vorstellen, man Teilt die Kugel in unendlich viele infintisemal $\Delta A = dx\cdot dy\cdot dz$ große Stücke
+und berechnet für diese die Dichte und summiert sie dann alle auf. In Abbildung \ref*{fig:Kugel_approximiert} ist dies versuchsweise dargestellt.
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.3]{Bilder/KugelApproximiert.png}
+    \caption{Eine Kugel dargestellt als eine Menge von kleinen Würfeln}
+    \label{fig:Kugel_approximiert}
+    \end{figure}  
+Der Grenzwert dieser Flächen ist dann das Integral
+$$
+\iiint_A f(x, y,z) d A=\lim _{\substack{\Delta x, \Delta y,\Delta z \rightarrow 0 \\ M, N,L \rightarrow \infty}} \sum_{i=1}^M \sum_{j=1}^N \sum_{k=1}^L f\left(x_{i j k}, y_{i j k},z_{ijk}\right) \Delta A_{i j k}
+$$
+Der Für uns aber häufig interresante Fall ist wenn $f(x,y,z)=1$, weil dann 
+$$
+\iiint_A f(x, y,z) d A
+$$
+gleich dem Volumen des Körpers ist.
+}
 
 
 

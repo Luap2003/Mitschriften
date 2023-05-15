@@ -18,4 +18,5 @@
 \contentsline {section}{\numberline {5.2}Berechnung eines Doppelintegrals unter Verwendung kartesischer Koordinaten}{19}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Transformation der Variablen}{21}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Rechenregeln für Integrale}{22}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Dreifach-Integrale}{22}{section.5.5}%
 \contentsfinish 
