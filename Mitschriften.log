@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.7)  15 MAY 2023 01:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.7)  15 MAY 2023 12:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1334,12 +1334,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 51.
 
 [3]
-<Bilder/F.pdf, id=142, 191.71625pt x 239.89626pt>
+<Bilder/F.pdf, id=148, 191.71625pt x 239.89626pt>
 File: Bilder/F.pdf Graphic file (type pdf)
 <use Bilder/F.pdf>
 Package pdftex.def Info: Bilder/F.pdf  used on input line 85.
 (pdftex.def)             Requested size: 191.71577pt x 239.89566pt.
-<Bilder/F_countour.pdf, id=143, 191.71625pt x 186.6975pt>
+<Bilder/F_countour.pdf, id=149, 191.71625pt x 186.6975pt>
 File: Bilder/F_countour.pdf Graphic file (type pdf)
 <use Bilder/F_countour.pdf>
 Package pdftex.def Info: Bilder/F_countour.pdf  used on input line 87.
@@ -1357,7 +1357,7 @@ Chapter 2.
 [7
 
 ] [8] [9]
-<Bilder/Taylopolynome.png, id=239, 2775.168pt x 1492.3755pt>
+<Bilder/Taylopolynome.png, id=245, 2775.168pt x 1492.3755pt>
 File: Bilder/Taylopolynome.png Graphic file (type png)
 <use Bilder/Taylopolynome.png>
 Package pdftex.def Info: Bilder/Taylopolynome.png  used on input line 302.
@@ -1369,7 +1369,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) h
 l.315 }
         <./Bilder/Taylopolynome.png>] [11]
 Chapter 3.
-<Bilder/Kugel.pdf, id=259, 235.88126pt x 238.8925pt>
+<Bilder/Kugel.pdf, id=265, 235.88126pt x 238.8925pt>
 File: Bilder/Kugel.pdf Graphic file (type pdf)
 <use Bilder/Kugel.pdf>
 Package pdftex.def Info: Bilder/Kugel.pdf  used on input line 353.
@@ -1399,29 +1399,55 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 392.
 
-<Bilder/Surface_integral1.png, id=304, 1927.2pt x 1909.1325pt>
+<Bilder/Surface_integral1.png, id=310, 1927.2pt x 1909.1325pt>
 File: Bilder/Surface_integral1.png Graphic file (type png)
 <use Bilder/Surface_integral1.png>
 Package pdftex.def Info: Bilder/Surface_integral1.png  used on input line 438.
 (pdftex.def)             Requested size: 192.7313pt x 190.92444pt.
-<Bilder/DoppelIntegralInnere.png, id=306, 580.3281pt x 443.0151pt>
+<Bilder/DoppelIntegralInnere.png, id=312, 580.3281pt x 443.0151pt>
 File: Bilder/DoppelIntegralInnere.png Graphic file (type png)
 <use Bilder/DoppelIntegralInnere.png>
 Package pdftex.def Info: Bilder/DoppelIntegralInnere.png  used on input line 438.
 (pdftex.def)             Requested size: 290.16333pt x 221.507pt.
 [15
 
-] [16
+]
+Overfull \hbox (0.89934pt too wide) in paragraph at lines 439--439
+[]\OT1/cmr/bx/n/14.4 Berechnung eines Doppelintegrals unter Verwendung kartesischer
+ []
+
+
+Underfull \hbox (badness 1701) in paragraph at lines 444--444
+[]\OT1/cmr/m/n/10 -Die Reihenfolge der Integration ist normalerweise durch die Reihenfolge der Differentiale im
+ []
+
+[16
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.455 \end{document}
-                    
+l.444 }
+       
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.455 \end{document}
-                     <./Bilder/Surface_integral1.png> <./Bilder/DoppelIntegralInnere.png>] (Mitschriften.aux)
+l.444 }
+        <./Bilder/Surface_integral1.png> <./Bilder/DoppelIntegralInnere.png>]
+<Bilder/Kreis_Surface_Integral.png, id=334, 462.528pt x 346.896pt>
+File: Bilder/Kreis_Surface_Integral.png Graphic file (type png)
+<use Bilder/Kreis_Surface_Integral.png>
+Package pdftex.def Info: Bilder/Kreis_Surface_Integral.png  used on input line 474.
+(pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
+ [17
+pdfTeX warning (ext4): destination with the same identifier (name{figure.4.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.474 }
+        <./Bilder/Kreis_Surface_Integral.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 500--500
+[]\OT1/cmr/m/n/10 Beim []Ubergang von kartesischen Koordinaten $\LMS/npxsy/m/n/10 ¹\OML/npxmi/m/it/10 x; y\LMS/npxsy/m/n/10 º$ \OT1/cmr/m/n/10 zu Polarkoordinaten $\LMS/npxsy/m/n/10 ¹\OML/npxmi/m/it/10 r; '$ \OT1/cmr/m/n/10 gelten die
+ []
+
+[18] [19] (Mitschriften.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.97499pt have occurred.
@@ -1431,17 +1457,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 48077 strings out of 478274
- 1107147 string characters out of 5839820
+ 48120 strings out of 478274
+ 1107967 string characters out of 5839820
  1885388 words of memory out of 5000000
- 67318 multiletter control sequences out of 15000+600000
- 594109 words of font info for 264 fonts, out of 8000000 for 9000
+ 67346 multiletter control sequences out of 15000+600000
+ 594444 words of font info for 265 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 99i,15n,102p,813b,1741s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</home/luap/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti7.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newtx/txexas.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/txfonts/txsya.pfb>
-Output written on Mitschriften.pdf (17 pages, 1437010 bytes).
+ 99i,15n,102p,1020b,1741s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ </home/luap/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk></home/luap/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti7.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newtx/txexas.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/txfonts/txsya.pfb>
+Output written on Mitschriften.pdf (20 pages, 1525473 bytes).
 PDF statistics:
- 470 PDF objects out of 1000 (max. 8388607)
- 83 named destinations out of 1000 (max. 500000)
- 477 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 522 PDF objects out of 1000 (max. 8388607)
+ 96 named destinations out of 1000 (max. 500000)
+ 528 words of extra memory for PDF output out of 10000 (max. 10000000)
 

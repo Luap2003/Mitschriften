@@ -436,9 +436,121 @@ $$
         \label{fig:Doppelintegral_innere}
         \end{figure}        
 }
+\section{Berechnung eines Doppelintegrals unter Verwendung kartesischer Koordinaten}
+\nt{\begin{itemize}
+    \item Ein Doppelintegral wird von innen nach außen integriert, d.h. zuerst bezüglich der Variablen $y$ und dann bezüglich der Variablen $x$. Die Integrationsgrenzen des inneren Integrals sind dabei von $x$ abhängige Funktionen, während die des äußeren Integrals konstant oder von einer anderen Variablen abhängig sein können.
+    \item -Die Reihenfolge der Integration ist normalerweise durch die Reihenfolge der Differentiale im Doppelintegral festgelegt. Sie sind jedoch austauschbar, wenn alle Integrationsgrenzen konstant sind (rechteckiges Integrationsgebiet).
+\end{itemize}
+}
+\ex{}{
+$$
+B=\left\{(x, y): x^2+y^2 \leqslant r^2 ; x \geqslant 0, y \geqslant 0,r \in \mathbb{R}\right\}
+$$
+Es soll das Doppelintegral 
+$$
+\iint_B x \cdot y d B
+$$ berechnet werden.
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.5]{Bilder/Kreis_Surface_Integral.png}
+    \caption{
+        Die Funktion $f(x,y)=x\cdot y$ für die Menge $B$}
+    \label{fig:Kugel_Doppelintegral_Surface}
+    \end{figure}  
+In Abb. \ref*{fig:Kugel_Doppelintegral_Surface} ist die Funktion zu sehen, das Surface-Integral berechnet das Volumen unter dieser Funktion.
+$$
+\begin{aligned}
+& B: a=0, b=R \\
+& f_u(x)=0, f_0(x)=\sqrt{R^2-x^2} \\
+& \iint_B x y d B=\int_0^R\left[\int_0^{\sqrt{R^2-x^2}} x y d y\right] d x \\
+& =\left.\int_0^R x\cdot \frac{y^2}{2}\right|_0 ^{\sqrt{R^2-x^2}} d x \\
+& =\int_0^R x\left(\frac{R^2-x^2}{2}\right) d x \\
+& =\int_0^R \frac{R^2 x}{2}-\frac{x^3}{2} d x \\
+& =\left[\frac{R^2 x^2}{4}-\frac{x^4}{8}\right]_0^R=\frac{R^4}{4}-\frac{R^4}{8} \\
+& =\frac{R^4}{8} \\
+&
+\end{aligned}
+$$
+}
+\nt{Beim Übergang von kartesischen Koordinaten $(x, y)$ zu Polarkoordinaten $(r, \varphi$ gelten die Transformationsgleichungen:
+\begin{equation}
+\begin{aligned}
+x &= r \cos \varphi \\
+y &= r \sin \varphi \\
+dA &= r \, dr \, d\varphi
+\end{aligned}
+\end{equation}
+Doppelintegral in Polarkoordinaten:
+\begin{equation}
+\iint_A f(x, y) \, dA = \int_{\varphi=\varphi_1}^{\varphi_2} \int_{r=r_i(\varphi)}^{r_a(\varphi)} f\left(r \cos \varphi, r \sin \varphi\right) \, r \, dr \, d\varphi
+\end{equation}
+\begin{enumerate}
+    \item Innere Integration nach $r$ (Radialkoordinate)
+    \item Äußere Integration nach $\varphi$
+\end{enumerate}
+Wir erhalten
+$$
+\begin{aligned}
+\iint_B x y d B & =\int_0^{\pi / 2}\left[\int_0^R r \cos \varphi r \sin \varphi r d r\right] d \varphi \\
+& =\int_0^R \left[\int_0^{\frac{\pi}{2}} r^3\cos \varphi \sin \varphi d \varphi\right] d r \\
+& =\int_0^R r^3 \frac{1}{2}\left[\sin ^2 \varphi\right]_0^{\frac{\pi}{2}} d r \\
+& =\frac{1}{2} \int_0^R r^3 d r=\frac{R^4}{8}
+\end{aligned}
+$$
+}
 
 
-
+\section{Transformation der Variablen}
+\dfn{}{
+    \begin{itemize}
+        \item Durch die Funktion
+        $$
+        \begin{aligned}
+        & x=\varphi(\tilde{x}, \tilde{y}) \\
+        & y=\psi(\tilde{x}, \tilde{y})
+        \end{aligned}
+        $$
+        werde der Bereich $\widetilde{\beta}$ der $\tilde{x}-\tilde{y}$-Ebene mit stückweise glattem Rand eineindeutig auf den Bereich $B$ der $x-y$-Ebene abgebildet.
+        \item $x=\varphi(x, \tilde{y}), y-\varphi(x, \tilde{y})$ und ihre partiellen Ableitungen erster ordnung seien stetig in $\widetilde{B}$
+        \item Im Inneren von $\widetilde{B}$ gelte für die Funktional determinante
+        $$
+        \operatorname{det}\left[\begin{array}{cc}
+        \varphi_{\tilde{x}}\left(\tilde{x}, \tilde{y}^2\right) & \varphi_{\tilde{y}}(\tilde{x}, \tilde{y}) \\
+        \psi_{\tilde{x}}(\tilde{x}, \tilde{y}) & \psi_{\tilde{y}}\left(\tilde{x}, \tilde{y}\right)
+        \end{array}\right] \neq 0
+        $$
+        \item Ist dann die Funktion in $f(x,y)$ in $B$ stetig, so gilt $$
+        \iint_B f(x, y) d B=\iint_{\tilde{B}} f\left(\varphi\left(\tilde{x}, \tilde{y}\right), \psi\left(\tilde{x}, \tilde{y}\right)\right) \operatorname{det}\left[\begin{array}{cc}
+        \varphi_{\tilde{x}} &\varphi_{\tilde{y}} \\
+        \psi_{\tilde{x}} &\psi_{\tilde{y}}
+        \end{array}\right] d \tilde{B}
+        $$
+    \end{itemize}
+}
+\ex{}{Viertelkreis $\iint_B x y d B$
+$$
+B=\left\{(x, y): x^2+y^2 \leqslant R^2, x \geqslant 0, y \geqslant 0\right\}
+$$
+Transformation $x=r \cos \varphi \quad 0 \leqslant r \leqslant R$
+$$
+y=r \sin \varphi \quad 0 \leqslant \varphi \leqslant \frac{\pi}{2}
+$$
+Zuordnung ist eineindeutig.
+$$
+\begin{aligned}
+& x=\varphi(\tilde{x}, \tilde{y})=\varphi(r, \varphi)=r \cos \varphi \\
+& y=\psi(\tilde{x}, \tilde{y})=\psi(r, \varphi)=r \sin \varphi
+\end{aligned}
+$$
+$\varphi_1 \varphi$ sind stetig
+$$
+\begin{aligned}
+& \varphi_r=\cos \varphi \quad \varphi_{\varphi}=-r \sin \varphi \\
+& \psi_r=\sin \varphi \quad \psi_{\varphi}^{\prime}=r \cos \varphi \\
+&
+\end{aligned}
+$$
+}
 
 
 

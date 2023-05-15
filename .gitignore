@@ -1,17 +1,17 @@
 ## Core latex/pdflatex auxiliary files:
-*.aux
-*.lof
-*.log
-*.lot
-*.fls
+Mitschriften.aux
+Mitschriften.lof
+Mitschriften.log
+Mitschriften.lot
+Mitschriften.fls
 *.out
-*.toc
+Mitschriften.toc
 *.fmt
 *.fot
 *.cb
 *.cb2
 .*.lb
-
+Mitschriften.fdb_latexmk
 ## Intermediate documents:
 *.dvi
 *.xdv
@@ -36,7 +36,7 @@
 *.fdb_latexmk
 *.synctex
 *.synctex(busy)
-*.synctex.gz
+Mitschriften.synctex.gz
 *.synctex.gz(busy)
 *.pdfsync
 
