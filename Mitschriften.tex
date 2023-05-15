@@ -17,6 +17,58 @@
 \pdfbookmark[section]{\contentsname}{toc}
 \tableofcontents
 \pagebreak
+\chapter{Kurven, Bogenlänge und Parametrisierung von Kurven}
+\section{Kurven im $\mathbb{R}^3$}
+\dfn{Kurven}{Seien $I$ ein Intervall, und $f_1, \ldots, f_n: I \rightarrow \mathbb{R}$ stetige Funktionen. Dann heisst
+$$
+\begin{aligned}
+f: \quad I & \rightarrow \mathbb{R}^n \\
+t & \mapsto f(t)=\left(f_1(t), \ldots, f_n(t)\right)
+\end{aligned}
+$$
+eine Kurve in $\mathbb{R}^n$. Die Kurve heisst differenzierbar, wenn alle Komponenten $f_k$ differenzierbar sind.}
+\ex{}{\begin{figure}[H]
+    \centering
+    \includegraphics[scale = 0.3]{Bilder/Spirale_Kurven.png}
+    \caption{Die Grafik visualsiert die Kurve $f(t)=(\cos(t),\sin(t),t)$}
+\end{figure}}
+\dfn{Geschwindigkeit}{Seien $I$ ein Intervall, und $f: I \rightarrow \mathbb{R}^n$ eine differenzierbare Kurve. Dann heisst der Vektor
+$$
+f^{\prime}(t)=\left(f_1^{\prime}(t), \ldots, f_n^{\prime}(t)\right)
+$$
+der Geschwindigkeitsvektor zum Zeitpunkt $t$.\newline
+Seine Länge $\left\|f^{\prime}(t)\right\|$ heisst Geschwindigkeit zum Zeitpunkt $t$.\newline
+Ist $f^{\prime}\left(t_0\right) \neq 0$ für ein $t_0$, so heisst
+$$
+\begin{aligned}
+g: & \mathbb{R} \rightarrow \mathbb{R}^n \\
+g(t)= & f\left(t_0\right)+t f^{\prime}\left(t_0\right)
+\end{aligned}
+$$
+die Tangente an $f$ in $f\left(t_0\right)$.}
+\dfn{Winkel}{Seien $f: I \rightarrow \mathbb{R}^n$ und $g: I \rightarrow \mathbb{R}^n$ zwei Kurven mit $f\left(t_1\right)=g\left(t_2\right)$. Sind die Geschwindigkeitsvektoren $f^{\prime}\left(t_1\right), g^{\prime}\left(t_2\right) \neq 0$, dann ist der Winkel $\Theta$ zwischen den Kurven im Punkt $f\left(t_1\right)=g\left(t_2\right)$ definiert durch
+$$
+\cos \Theta=\frac{\left\langle f^{\prime}\left(t_1\right), g^{\prime}\left(t_2\right)\right\rangle}{\left\|f^{\prime}\left(t_1\right)\right\|\left\|g^{\prime}\left(t_2\right)\right\|}
+$$}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 \chapter{Funktionen im $\mathbb{R}^n$}
 \section{Krümmung}
 \dfn{}{Sei $g:[0, L]$ eine zweimal steigt differenzierbare Kurve, parametrisiert nach Bogenlänge. Dann heißt
@@ -531,10 +583,11 @@ $$
 $$
 B=\left\{(x, y): x^2+y^2 \leqslant R^2, x \geqslant 0, y \geqslant 0\right\}
 $$
-Transformation $x=r \cos \varphi \quad 0 \leqslant r \leqslant R$
-$$
-y=r \sin \varphi \quad 0 \leqslant \varphi \leqslant \frac{\pi}{2}
-$$
+Transformation 
+\begin{align*}
+&x=r \cos \varphi \quad 0 \leqslant r \leqslant R\\
+&y=r \sin \varphi \quad 0 \leqslant \varphi \leqslant \frac{\pi}{2}
+\end{align*}
 Zuordnung ist eineindeutig.
 $$
 \begin{aligned}
@@ -542,13 +595,60 @@ $$
 & y=\psi(\tilde{x}, \tilde{y})=\psi(r, \varphi)=r \sin \varphi
 \end{aligned}
 $$
-$\varphi_1 \varphi$ sind stetig
+$\varphi \psi$ sind stetig
 $$
 \begin{aligned}
 & \varphi_r=\cos \varphi \quad \varphi_{\varphi}=-r \sin \varphi \\
-& \psi_r=\sin \varphi \quad \psi_{\varphi}^{\prime}=r \cos \varphi \\
+& \psi_r=\sin \varphi \quad \psi_{\varphi}=r \cos \varphi \\
 &
 \end{aligned}
+$$
+Funktional determinante
+$$
+\begin{aligned}
+\operatorname{det}\left[\begin{array}{cc}
+\varphi r & \varphi \varphi \\
+4 r & \psi \varphi
+\end{array}\right] & =\operatorname{det}\left[\begin{array}{cc}
+\cos \varphi & -r \sin \varphi \\
+\sin \varphi & r \cos \varphi
+\end{array}\right] \\
+& =r \cos ^2 \varphi+r \sin ^2 \varphi \\
+& =r
+\end{aligned}
+$$
+ist $\neq 0$ im Inneren von $\widetilde{B}$\newline
+$\implies$ Transformationssatz ist anwendbar.}
+
+\section{Rechenregeln für Integrale}
+\dfn{}{\textbf{Additivität:}\newline
+sind $f,g$ zwei integrierbare Funktionen, so gilt
+$$
+ \iint_B(f(x, y)+g(x, y)) d B =\int_B f(x, y) d B+\int_B g(x, y) d B
+$$
+\textbf{Additivität bzgl. der Bereiche:}\newline
+Seien $B_1, B_2$ zwei Bereiche ohne gemeinsame innere Punkte, so gilt
+$$
+\iint_{B, \cup B_2} f(x, y) d B=\int_{B_1} f(x, y) d B+\iint_{B_2} f(x, y) d B
+$$
+\textbf{Konstanter Faktor:}\newline
+Ist $k$ eine reele Zahl, so gilt
+$$
+\iint_B k f(x, y) d B=k \iint_B f(x, y) d B
+$$
+\textbf{Monotonie:}
+Ist für jeden Punkt $(x, y) \in B$ $f(x, y) \leq g(x, y)$, so gilt
+$$
+\iint_B f(x, y) d B \leq \iint_B g(x, y) d B
+$$
+\textbf{Abschätzung:} Ist $f$ über $B$ integrierbar, so auch $|f|$ so gilt
+$$
+\left|\iint_B f(x, y) d B\right| \leqslant \iint_B|f(x, y)| d B
+$$
+\textbf{Eingrenzung:}\newline
+Ist $m$ die untere, $M$ die obere grenze von $f$ in $B(m \leqslant M)$ und ist $|B|$ der Flächeninhalt von $B$, so gilt
+$$
+m|B|=\iint_R f(x, y) d B \leq M|B|
 $$
 }
 
