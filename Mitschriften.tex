@@ -567,7 +567,7 @@ $$
         \item Im Inneren von $\widetilde{B}$ gelte für die Funktional determinante
         $$
         \operatorname{det}\left[\begin{array}{cc}
-        \varphi_{\tilde{x}}\left(\tilde{x}, \tilde{y}^2\right) & \varphi_{\tilde{y}}(\tilde{x}, \tilde{y}) \\
+        \varphi_{\tilde{x}}\left(\tilde{x}, \tilde{y}\right) & \varphi_{\tilde{y}}(\tilde{x}, \tilde{y}) \\
         \psi_{\tilde{x}}(\tilde{x}, \tilde{y}) & \psi_{\tilde{y}}\left(\tilde{x}, \tilde{y}\right)
         \end{array}\right] \neq 0
         $$
@@ -704,10 +704,84 @@ $$
 $$
 gleich dem Volumen des Körpers ist.
 }
+\thm{Transformation von Variablen}{Die Voraussetzungen seien hier für Transformationsfunktionen 
+$x=\varphi(\tilde{x}, \tilde{y}, \tilde{z}),y=\psi(x, \tilde{y}, \tilde{z}), z=\chi(\tilde{x}, \tilde{y}, \tilde{z})$ die selben wie im 2-dimensionalem. 
+Ist dann im Inneren des Bereiches $V$ die Funktional-deternmiante
+$$
+\operatorname{det}\underbrace{\left[\begin{array}{lll}
+\frac{\partial \varphi}{\partial \tilde{x}} & \frac{\partial \varphi}{\partial \tilde{y}} & \frac{\partial  \varphi}{\partial \tilde{z}} \\
+\frac{\partial \psi}{\partial \tilde{x}} & \frac{\partial \psi}{\partial \tilde{y}} & \frac{\partial \psi}{\partial \tilde{z}} \\
+\frac{\partial \chi}{\partial \tilde{x}} & \frac{\partial \chi}{\partial \tilde{y}} & \frac{\partial \chi}{\partial \tilde{z}}
+\end{array}\right]}_M \neq 0
+$$
+so gilt für jede Stetige Funktion $f(x, y, z)$
+$$
+\iiint_V f(x, y, z) d V =\iiint_{\tilde{V}} f\left(\varphi(\tilde{x}, \tilde{y}, \tilde{z}), \psi(\tilde{x}, \tilde{y}, \tilde{z}), \chi(\tilde{x},\tilde{y}, \tilde{z})\right) \operatorname{det} M d \widetilde{V}
+$$
+}
+\ex{Transformation zu kartesischen Koordinaten}{
+    Sei $$
+    B=\{(x,y,z)\in\mathbb{R}^3\mid x^2+y^2+z^2 = 1\}
+    $$
+    Wir wollen das Volumen der Kugel bestimmen, sei also $f(x,y,z)=1$. Wenn wir jetzt 
+    $$
+    \iiint_V1dV
+    $$
+    bestimmen erhalten wir direkt das Volumen, ohne einen Wechsel ist dieses Integral aber händisch nicht zu lösen.\newline
+    Es wird also ein Wechsel der Variablen hinzu den Polarkoordinaten vorgenommen.
+    \begin{figure}[H]
+        \centering
+        \includegraphics*[scale=0.3]{Bilder/Visualize_Surface_Integral_Polarkoordinates.png}
+        \caption{Eine Kugel dargestellt als eine Menge von kleinen Würfeln}
+        \label{fig:SurfaceIntegralVisualisiertKugel}
+        \end{figure}  
+    
+    In der Abbildung \ref*{fig:SurfaceIntegralVisualisiertKugel}  wird das Prinzip gezeigt, wie kleine Stücke aus einer Kugel entnommen und anschließend aufsummiert werden, um das Integral zu berechnen.\newline
 
+    Die zentrale Frage ist, warum die Größe eines solchen Stücks genau $r\sin{\vartheta}d\lambda \cdot rd\vartheta\cdot dr$ ist.
+    
+    Die Höhe des Stücks ist $dr$, was recht intuitiv ist, da sie nicht von den beiden anderen Winkeln abhängt. Eine Seitenkante des Stücks hat die Länge $rd\vartheta$. 
+    Man kann sich vorstellen, dass bei einer festen Änderung des Winkels $d\vartheta$ die Länge der Seitenkante in direkter Proportionalität zu $r$ steht - je größer $r$ ist, desto länger wird die Seitenkante, 
+    und je kleiner $r$ ist, desto kürzer wird die Kante.\newline
+    
+    Die letzte Seitenkante ist etwas schwerer zu erkennen. 
+    Der Faktor $r$ entsteht auf die gleiche Weise wie bei der vorherigen Seitenkante. 
+    Nun muss noch der Faktor $\sin\vartheta$ erklärt werden. Anhand der Abbildung kann man erkennen, dass die Kante von der $z$-Achse zur Seitenkante eine Länge von $r\sin\vartheta$ hat. 
+    Bei genauerem Hinsehen ist die Proportionalität dieser Länge zur Länge der Seitenkante erkennbar, woraus sich deren Länge ergibt.\newline
 
-
-
+    Wenn diese Transformation erledigt ist, kann jetzt das Integral gelöst werden:
+    \begin{align*}
+        |V|=\iiint 1 d V & =\int_0^R \int_0^{2 \pi} \int_0^\pi r^2 \sin v d v d \varphi d r \\
+        &\text{ Das innerste Integral berechnet einen Halbkreis}\\
+        &\text{ im zweiten Integral wird dieser Halbkreis dann einmal vollständig um die $z$ Achse gedreht}\\
+        &\text{ im äußersten Integral wird dann für alle $dr$ aufsummiert}\\
+        & =\int_0^R r^2 \int_0^{2 \pi}-[\cos v]_0^\pi d p d r \\
+        & =\int_0^{R^0} r^2 \int_0^{2 \pi}-((-1)-1) d \varphi d r \\
+        & =2 \int_0^R r^2[\varphi]_0^{2 \pi} d r=4 \pi \int_0^R r^2 d r \\
+        & =\frac{4}{3} \pi\left[r^3\right]_0^R=\frac{4 \pi R^3}{3}
+    \end{align*}
+}
+\thm{}{
+Hat das Dreifachintegral feste Grenzen und lässt sich der Integralrand schreiben als
+$$
+f(x, y, z)=f_1(x) f_2(y) f_3(z) \text {, }
+$$
+so gilt
+$$
+\begin{aligned}
+\iiint_V f(x, y, z) d V&=\int_{x_0}^{x_1} \int_{y_0}^{y_1} \int_{z_0}^{z_1} f(x, y, z) d x d y d z \\
+& =\int_{x_0}^{x_1} f_1(x) d x \cdot \int_{y_0}^{y_1} f_2(y) d y \int_{z_0}^{z_1} f_3(z) d z \\
+&
+\end{aligned}
+$$}
+\ex{}{Bsp: erneut die Berechnung des Volumens der Kugel
+$$
+\begin{aligned}
+|V|=\iiint_V & =\int_0^R r^2 d r \int_0^{2 \pi} d \varphi \cdot \int_0^\pi \sin v d v \\
+& =\frac{R^3}{3} \cdot 2 \pi \cdot[-\cos v]_0^\pi \\
+& =\frac{R^3}{3} \cdot 2 \pi \cdot(-(-1-1))=\frac{4 \pi R^3}{3}
+\end{aligned}
+$$}
 
 
 

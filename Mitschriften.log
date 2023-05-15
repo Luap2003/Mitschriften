@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.7)  15 MAY 2023 20:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.7)  16 MAY 2023 00:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1488,8 +1488,39 @@ Package pdftex.def Info: Bilder/KugelApproximiert.png  used on input line 706.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.718 \end{document}
-                     <./Bilder/KugelApproximiert.png>] (Mitschriften.aux)
+l.721 }
+        <./Bilder/KugelApproximiert.png>]
+<Bilder/Visualize_Surface_Integral_Polarkoordinates.png, id=407, 703.62875pt x 660.4675pt>
+File: Bilder/Visualize_Surface_Integral_Polarkoordinates.png Graphic file (type png)
+<use Bilder/Visualize_Surface_Integral_Polarkoordinates.png>
+Package pdftex.def Info: Bilder/Visualize_Surface_Integral_Polarkoordinates.png  used on input line 763.
+(pdftex.def)             Requested size: 211.09026pt x 198.14177pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 763--763
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 763--763
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 763--763
+
+ []
+
+
+Overfull \hbox (2.88347pt too wide) detected at line 763
+[]
+ []
+
+[24
+pdfTeX warning (ext4): destination with the same identifier (name{figure.5.5}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.763 }
+        <./Bilder/Visualize_Surface_Integral_Polarkoordinates.png>] [25] (Mitschriften.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.97499pt have occurred.
@@ -1499,17 +1530,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 48205 strings out of 478274
- 1109739 string characters out of 5839820
+ 48225 strings out of 478274
+ 1110372 string characters out of 5839820
  1885388 words of memory out of 5000000
- 67412 multiletter control sequences out of 15000+600000
+ 67424 multiletter control sequences out of 15000+600000
  594444 words of font info for 265 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
- 99i,15n,102p,1020b,1741s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,17n,102p,1020b,1741s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/luap/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk></home/luap/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti7.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newtx/txexas.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/txfonts/txsya.pfb>
-Output written on Mitschriften.pdf (24 pages, 1919061 bytes).
+Output written on Mitschriften.pdf (26 pages, 2022599 bytes).
 PDF statistics:
- 581 PDF objects out of 1000 (max. 8388607)
- 113 named destinations out of 1000 (max. 500000)
- 582 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 599 PDF objects out of 1000 (max. 8388607)
+ 120 named destinations out of 1000 (max. 500000)
+ 593 words of extra memory for PDF output out of 10000 (max. 10000000)
 
