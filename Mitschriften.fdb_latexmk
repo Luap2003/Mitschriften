@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1684189145 "/home/luap/Documents/Studium/TexTest/Mathe3/Mitschriften/Mitschriften.tex" "Mitschriften.pdf" "Mitschriften" 1684189149 0
+["pdflatex"] 1684742788 "/home/luap/Documents/Studium/TexTest/Mathe3/Mitschriften/Mitschriften.tex" "Mitschriften.pdf" "Mitschriften" 1684742792 0
   "/home/luap/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map" 1684096675 95893 ce83be16398c98005bea1b4958dae9f9 ""
   "/home/luap/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk" 1681722827 11548 befbff829c9f978e18629cf88a9c89db ""
   "/home/luap/.miktex/texmfs/data/miktex/data/le/pdftex/pdflatex.fmt" 1683435588 19997346 63fa24467bd8f1718c26abb2b81642d7 ""
@@ -330,7 +330,8 @@
   "/home/luap/.miktex/texmfs/install/tex/latex/xcolor/xcolor.sty" 1680028361 56148 51a9a8571c07b9921892ae11063ae853 ""
   "/home/luap/.miktex/texmfs/install/tex/latex/xifthen/xifthen.sty" 1680028374 5689 1bfa68243e89a54479e7d0580773c57e ""
   "/home/luap/.miktex/texmfs/install/tex/latex/xkeyval/xkeyval.sty" 1680028334 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
-  "/home/luap/Documents/Studium/TexTest/Mathe3/Mitschriften/Mitschriften.tex" 1684189145 37636 368ddbc9006803b36a43beef303dbc5c ""
+  "/home/luap/Documents/Studium/TexTest/Mathe3/Mitschriften/Mitschriften.tex" 1684742784 38464 a98ac924867d65ed482dd5501833a0d0 ""
+  "Bilder/AngleOf2Curves.png" 1684320549 32408 076d5aca39b3405b9f13b84caeb76a7d ""
   "Bilder/DoppelIntegralInnere.png" 1684106195 126086 18106dca06c9f78208f5d3b1592e36ca ""
   "Bilder/F.pdf" 1683264346 229408 db9e845447f023ef7c914fecd2d88411 ""
   "Bilder/F_countour.pdf" 1683264333 75132 d43f2d2228e40fc4d10fe4b1512ec6c7 ""
@@ -341,9 +342,9 @@
   "Bilder/Surface_integral1.png" 1684097068 156458 22cabbfc5f5efc528acd8de85fd79c41 ""
   "Bilder/Taylopolynome.png" 1683452887 417413 e6f2dadd7b07b363bf0dacc6c5638efd ""
   "Bilder/Visualize_Surface_Integral_Polarkoordinates.png" 1684135661 112619 ae072821502d76e50117992643a2864d ""
-  "Mitschriften.aux" 1684189148 15100 d56717c50a93675219625abbede48224 "pdflatex"
-  "Mitschriften.tex" 1684189145 37636 368ddbc9006803b36a43beef303dbc5c ""
-  "Mitschriften.toc" 1684189148 1837 a91ead983ce44ee74a68b24875a3a370 "pdflatex"
+  "Mitschriften.aux" 1684742791 15971 89d7424782032074f6091360182a2564 "pdflatex"
+  "Mitschriften.tex" 1684742784 38464 a98ac924867d65ed482dd5501833a0d0 ""
+  "Mitschriften.toc" 1684742791 1913 35c5566079adeec3ed8c4276481dd6ab "pdflatex"
   "letterfonts.tex" 1683235803 8700 c12982e14e8bffe11476fa3df5653ceb ""
   "macros.tex" 1683235807 3475 5c0ef6379078efa5bb7714930f08154a ""
   "preamble.tex" 1684096672 20950 ac258d5b8aff73b26c7e05c1d8382996 ""
