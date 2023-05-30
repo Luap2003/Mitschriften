@@ -20,4 +20,5 @@
 \contentsline {section}{\numberline {5.4}Rechenregeln für Integrale}{22}{section.5.4}%
 \contentsline {section}{\numberline {5.5}Dreifach-Integrale}{22}{section.5.5}%
 \contentsline {chapter}{\numberline {6}Einführung Numerik}{26}{chapter.6}%
+\contentsline {chapter}{\numberline {7}Quadratur (Numerische Integration)}{27}{chapter.7}%
 \contentsfinish 

@@ -811,9 +811,119 @@ $$
 \left|\frac{x-\tilde{x}}{x}\right|
 $$
 der relative Rundungsfehler.}
+\nt{Ein weiteres Konzept ist das Runden auf Nachkommastellen:
+$\pi=3.1415926$ auf $n=4$ dargestellt als 3.1416.\newline
+Moderne Computer speichern Realdarstellungszahlen im binären Zahlensystem.
+
+Für die folgenden Beispiele nehmen wir an, wir arbeiten im Dezimalsystem. Eine Zahl $x \in \mathbb{R}$ wird in standardisierter Form dargestellt als
+$$x= a\cdot 10^b$$
+wobei $a= \pm 0,a_1 a_2 \ldots a_n a_{n+1} \ldots$ mit $0 \leq a_i \leq 9$ und $a_1 \neq 0$ die Mantisse ist und $b$ der Exponent.
+$$
+a^{\prime}= \begin{cases}0.a_1a_2 \dots a_n \quad 0 \leq a_{n+1} \leq 4 \\ 0.a_1a_2 \dots a_n+10^{-n}: a_{n+1} \geq 5\end{cases}
+$$
+}
 
 
+\chapter{Quadratur (Numerische Integration)}
+\qs{}{
+    \textbf{Gegeben:} Stetige Funktion über begrenztem Intervall
+\[
+f:[a, b] \rightarrow \mathbb{R}
+\]
+\textbf{Gesucht:} Bestimmtes Integral
+\[
+I=\int_a^b f(x) \, dx
+\]
+}
+\nt{\begin{itemize}
+    \item $f$ stetig $\Rightarrow$ I existiert
+    \item "Quadratur" Integral als Fläche zwischen Kurve
+    \item Vorzeichen sind zu betrachten, falls $f$ die $x$-Achse schneidet
+    \end{itemize}}
+\ex{Analytische Lösung bekannt}{
+    $$
+f(x)=x \cdot e^{x} \quad, a=0, b=1
+$$
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.5]{Bilder/Int_xetox.png}
+    \end{figure}
+}
+\ex{Keine Analytische Lösung bekannt}{
+    $$f(x)=e^{-x^{2}} \quad a=-1, b=1$$
+    \begin{figure}[H]
+        \centering
+        \includegraphics*[scale=0.5]{Bilder/BellCurveInt.png}
+    \end{figure}
+}
+\ex{Keine geschlossene Lösung angebbar}{
+    $$
+f(x)=\frac{1}{\ln (x)}, a=2, b=3\quad\footnote{\url{https://mathworld.wolfram.com/LogarithmicIntegral.html}}
+$$
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale=0.5]{Bilder/InrLogX.png}
+\end{figure}
+}
+\nt{\begin{itemize}
+    \item Existiert eine geschlossene Lösung, so ist
+    \[
+    I=F(b)-F(a)
+    \]
+    (nutzen wir lieber zur Veranschaulichung)
+    \item Ermittlung (näherungsweise) numerisch
+    \item Fehler der Quadraturformel ist Abweichung vom exakten Wert
+    \end{itemize}}
+\nt{\begin{minipage}[t]{0.49\textwidth}
+    \begin{figure}[H]
+        \centering
+        \includegraphics*[scale=0.5]{Bilder/IntTrapze.png}
+    \end{figure}
+    $$
+I =\int_{a}^b f(x) d x \approx \frac{f(a)+f(b)}{2}(b-a)
+$$
+    \end{minipage}
+    \begin{minipage}[t]{0.5\textwidth}
+        \begin{figure}[H]
+            \centering
+            \includegraphics*[scale=0.5]{Bilder/InrRechteck.png}
+        \end{figure}
+        $$
+        I =\int_{a}^b f(x) d x \approx f\left(\frac{a+b}{2}\right)(b-a)
+        $$
+    \end{minipage}
+    Zerlege das Intervall $[a, b]$ in $N$ genügend kleine Teilintervalle
+\[
+a=x_0<x_1<\ldots<x_N=b
+\]
+$x_i$... Stützstellen / Knoten
 
-
-
+Wegen Additivität
+\[
+\int_a^b f(x) dx=\sum_{j=0}^{N-1}\left(\int_{x_j}^{x_{j+1}} f(x) dx\right)
+\]
+Betrachten wir das Teilintervall und führen die Schrittweite $h_j:=x_{j+1}-x_j$ ein. Sei $t:=\frac{\left(x-x_j\right)}{h_j}$, dann gilt
+$$
+x=x_j+t\cdot h_j \implies \frac{dx}{dt} = h_j
+$$
+$$dx = h_jdt$$
+durch Substitution erhält man
+\[
+\int_{x_j}^{x_{j+1}} f(x) dx=h_j\int_0^1 f(x_j+t h_j) dt
+\]
+Sei $g(t)=f\left(x_j+t h_j\right)$, ist
+\[
+I=\int_0^1 g(t) dt
+\]    
+das neue Integral. 
+$$
+\int_0^1 g(t) d t \approx g\left(\frac{1}{2}\right)=(1-0) \cdot g\left(\frac{1}{2}\right)
+$$   
+    
+    
+    
+    
+    
+    
+    }
 \end{document}
