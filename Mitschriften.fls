@@ -1647,7 +1647,6 @@ INPUT /home/luap/.miktex/texmfs/install/fonts/tfm/public/newpx/zplsyc.tfm
 INPUT /home/luap/.miktex/texmfs/install/fonts/tfm/public/newpx/zplexa.tfm
 INPUT /home/luap/.miktex/texmfs/install/fonts/tfm/public/newpx/zplexa.tfm
 INPUT /home/luap/.miktex/texmfs/install/fonts/tfm/public/newpx/zplexa.tfm
-OUTPUT Mitschriften.toc
 INPUT /home/luap/.miktex/texmfs/install/fonts/vf/public/newpx/zplmia.vf
 INPUT /home/luap/.miktex/texmfs/install/fonts/tfm/public/newpx/pxmiaX.tfm
 INPUT /home/luap/.miktex/texmfs/install/fonts/tfm/public/newtx/txmiaSTbb.tfm
@@ -1658,6 +1657,7 @@ INPUT /home/luap/.miktex/texmfs/install/fonts/vf/public/newpx/zplmi.vf
 INPUT /home/luap/.miktex/texmfs/install/fonts/tfm/public/newpx/NewPXMI_gnu.tfm
 INPUT /home/luap/.miktex/texmfs/install/fonts/tfm/public/newpx/NewPXMI.tfm
 INPUT /home/luap/.miktex/texmfs/install/fonts/tfm/public/newtx/stxscr.tfm
+OUTPUT Mitschriften.toc
 INPUT /home/luap/.miktex/texmfs/install/fonts/tfm/public/cm/cmbx12.tfm
 INPUT /home/luap/.miktex/texmfs/install/fonts/tfm/public/cm/cmr10.tfm
 INPUT /home/luap/.miktex/texmfs/install/fonts/tfm/public/cm/cmr8.tfm

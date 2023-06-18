@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.7)  29 MAY 2023 23:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2023.5.7)  18 JUN 2023 18:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1276,18 +1276,20 @@ Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
-)
-\tf@toc=\write5
-\openout5 = `Mitschriften.toc'.
-
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20 \chapter
-             {Kurven, Bogenl√§nge und Parametrisierung von Kurven} [1
+l.26 ...raturfehler und Gausformel}{33}{chapter.8}
+                                                  % [1
 
 ]
+Missing character: There is no ; in font nullfont!
+)
+\tf@toc=\write5
+\openout5 = `Mitschriften.toc'.
+
+ [2]
 Chapter 1.
 
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.5> not available
@@ -1309,12 +1311,12 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 21.
 
-<Bilder/Spirale_Kurven.png, id=131, 854.19125pt x 754.82pt>
+<Bilder/Spirale_Kurven.png, id=144, 854.19125pt x 754.82pt>
 File: Bilder/Spirale_Kurven.png Graphic file (type png)
 <use Bilder/Spirale_Kurven.png>
 Package pdftex.def Info: Bilder/Spirale_Kurven.png  used on input line 34.
 (pdftex.def)             Requested size: 256.25935pt x 226.44775pt.
-[2
+[3
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}) has been already used, duplicate ignored
@@ -1322,12 +1324,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.1.1}) h
                                                   \__shipout_drop_firstpage_...
 l.52 $$}
          <./Bilder/Spirale_Kurven.png>]
-<Bilder/AngleOf2Curves.png, id=141, 552.0625pt x 634.37pt>
+<Bilder/AngleOf2Curves.png, id=154, 552.0625pt x 634.37pt>
 File: Bilder/AngleOf2Curves.png Graphic file (type png)
 <use Bilder/AngleOf2Curves.png>
 Package pdftex.def Info: Bilder/AngleOf2Curves.png  used on input line 71.
 (pdftex.def)             Requested size: 165.62003pt x 190.31245pt.
- [3
+ [4
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1358,7 +1360,7 @@ LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <18.2> not available
 LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <13.7> not available
 (Font)              size <14.4> substituted on input line 91.
 
-[4
+[5
 
 ]
 
@@ -1377,18 +1379,18 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 122.
 
-[5]
-<Bilder/F.pdf, id=183, 191.71625pt x 239.89626pt>
+[6]
+<Bilder/F.pdf, id=197, 191.71625pt x 239.89626pt>
 File: Bilder/F.pdf Graphic file (type pdf)
 <use Bilder/F.pdf>
 Package pdftex.def Info: Bilder/F.pdf  used on input line 156.
 (pdftex.def)             Requested size: 191.71577pt x 239.89566pt.
-<Bilder/F_countour.pdf, id=184, 191.71625pt x 186.6975pt>
+<Bilder/F_countour.pdf, id=198, 191.71625pt x 186.6975pt>
 File: Bilder/F_countour.pdf Graphic file (type pdf)
 <use Bilder/F_countour.pdf>
 Package pdftex.def Info: Bilder/F_countour.pdf  used on input line 158.
 (pdftex.def)             Requested size: 191.71577pt x 186.69704pt.
- [6
+ [7
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1396,36 +1398,36 @@ l.186 $$}
           <./Bilder/F.pdf> <./Bilder/F_countour.pdf
 
 pdfTeX warning: pdflatex (file ./Bilder/F_countour.pdf): PDF inclusion: multiple pdfs with page group included in a single page
->] [7] [8]
+>] [8] [9]
 Chapter 3.
-[9
+[10
 
-] [10] [11]
-<Bilder/Taylopolynome.png, id=280, 2775.168pt x 1492.3755pt>
+] [11] [12]
+<Bilder/Taylopolynome.png, id=294, 2775.168pt x 1492.3755pt>
 File: Bilder/Taylopolynome.png Graphic file (type png)
 <use Bilder/Taylopolynome.png>
 Package pdftex.def Info: Bilder/Taylopolynome.png  used on input line 373.
 (pdftex.def)             Requested size: 416.25725pt x 223.84666pt.
- [12
+ [13
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.386 }
-        <./Bilder/Taylopolynome.png>] [13]
+        <./Bilder/Taylopolynome.png>] [14]
 Chapter 4.
-<Bilder/Kugel.pdf, id=301, 235.88126pt x 238.8925pt>
+<Bilder/Kugel.pdf, id=314, 235.88126pt x 238.8925pt>
 File: Bilder/Kugel.pdf Graphic file (type pdf)
 <use Bilder/Kugel.pdf>
 Package pdftex.def Info: Bilder/Kugel.pdf  used on input line 424.
 (pdftex.def)             Requested size: 235.88068pt x 238.8919pt.
-[14
+[15
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.447 ...ierbar oder hat einen kritischen Punkt).}
-                                                   <./Bilder/Kugel.pdf>] [15] [16]
+                                                   <./Bilder/Kugel.pdf>] [16] [17]
 Chapter 5.
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -1443,17 +1445,17 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 463.
 
-<Bilder/Surface_integral1.png, id=345, 1927.2pt x 1909.1325pt>
+<Bilder/Surface_integral1.png, id=358, 1927.2pt x 1909.1325pt>
 File: Bilder/Surface_integral1.png Graphic file (type png)
 <use Bilder/Surface_integral1.png>
 Package pdftex.def Info: Bilder/Surface_integral1.png  used on input line 509.
 (pdftex.def)             Requested size: 192.7313pt x 190.92444pt.
-<Bilder/DoppelIntegralInnere.png, id=347, 580.3281pt x 443.0151pt>
+<Bilder/DoppelIntegralInnere.png, id=360, 580.3281pt x 443.0151pt>
 File: Bilder/DoppelIntegralInnere.png Graphic file (type png)
 <use Bilder/DoppelIntegralInnere.png>
 Package pdftex.def Info: Bilder/DoppelIntegralInnere.png  used on input line 509.
 (pdftex.def)             Requested size: 290.16333pt x 221.507pt.
-[17
+[18
 
 ]
 Overfull \hbox (0.89934pt too wide) in paragraph at lines 510--510
@@ -1465,7 +1467,7 @@ Underfull \hbox (badness 1701) in paragraph at lines 515--515
 []\OT1/cmr/m/n/10 -Die Reihenfolge der Integration ist normalerweise durch die Reihenfolge der Differentiale im
  []
 
-[18
+[19
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1476,12 +1478,12 @@ pdfTeX warning (ext4): destination with the same identifier (name{figure.5.2}) h
                                                   \__shipout_drop_firstpage_...
 l.515 }
         <./Bilder/Surface_integral1.png> <./Bilder/DoppelIntegralInnere.png>]
-<Bilder/Kreis_Surface_Integral.png, id=370, 462.528pt x 346.896pt>
+<Bilder/Kreis_Surface_Integral.png, id=383, 462.528pt x 346.896pt>
 File: Bilder/Kreis_Surface_Integral.png Graphic file (type png)
 <use Bilder/Kreis_Surface_Integral.png>
 Package pdftex.def Info: Bilder/Kreis_Surface_Integral.png  used on input line 545.
 (pdftex.def)             Requested size: 231.26343pt x 173.44757pt.
- [19
+ [20
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.3}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
@@ -1491,19 +1493,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 571--571
 []\OT1/cmr/m/n/10 Beim []Ubergang von kartesischen Koordinaten $\LMS/npxsy/m/n/10 π\OML/npxmi/m/it/10 x; y\LMS/npxsy/m/n/10 ∫$ \OT1/cmr/m/n/10 zu Polarkoordinaten $\LMS/npxsy/m/n/10 π\OML/npxmi/m/it/10 r; '$ \OT1/cmr/m/n/10 gelten die
  []
 
-[20] [21]
-<Bilder/KugelApproximiert.png, id=401, 699.61375pt x 611.28375pt>
+[21] [22]
+<Bilder/KugelApproximiert.png, id=414, 699.61375pt x 611.28375pt>
 File: Bilder/KugelApproximiert.png Graphic file (type png)
 <use Bilder/KugelApproximiert.png>
 Package pdftex.def Info: Bilder/KugelApproximiert.png  used on input line 725.
 (pdftex.def)             Requested size: 209.88574pt x 183.38654pt.
- [22] [23
+ [23] [24
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.4}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.740 }
         <./Bilder/KugelApproximiert.png>]
-<Bilder/Visualize_Surface_Integral_Polarkoordinates.png, id=416, 703.62875pt x 660.4675pt>
+<Bilder/Visualize_Surface_Integral_Polarkoordinates.png, id=430, 703.62875pt x 660.4675pt>
 File: Bilder/Visualize_Surface_Integral_Polarkoordinates.png Graphic file (type png)
 <use Bilder/Visualize_Surface_Integral_Polarkoordinates.png>
 Package pdftex.def Info: Bilder/Visualize_Surface_Integral_Polarkoordinates.png  used on input line 782.
@@ -1528,51 +1530,55 @@ Overfull \hbox (2.88347pt too wide) detected at line 782
 []
  []
 
-[24
+[25
 pdfTeX warning (ext4): destination with the same identifier (name{figure.5.5}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
 l.782 }
-        <./Bilder/Visualize_Surface_Integral_Polarkoordinates.png>] [25]
+        <./Bilder/Visualize_Surface_Integral_Polarkoordinates.png>] [26]
 Chapter 6.
-[26
+[27
 
 ]
 Chapter 7.
-<Bilder/Int_xetox.png, id=446, 392.77174pt x 252.945pt>
+<Bilder/Int_xetox.png, id=459, 392.77174pt x 252.945pt>
 File: Bilder/Int_xetox.png Graphic file (type png)
 <use Bilder/Int_xetox.png>
 Package pdftex.def Info: Bilder/Int_xetox.png  used on input line 851.
 (pdftex.def)             Requested size: 196.38538pt x 126.47218pt.
-<Bilder/BellCurveInt.png, id=448, 392.77174pt x 260.0149pt>
+<Bilder/BellCurveInt.png, id=461, 392.77174pt x 260.0149pt>
 File: Bilder/BellCurveInt.png Graphic file (type png)
 <use Bilder/BellCurveInt.png>
 Package pdftex.def Info: Bilder/BellCurveInt.png  used on input line 858.
 (pdftex.def)             Requested size: 196.38538pt x 130.00713pt.
-[27
+[28
 
  <./Bilder/Int_xetox.png (PNG copy)>]
-<Bilder/InrLogX.png, id=460, 392.77174pt x 259.22935pt>
+<Bilder/InrLogX.png, id=473, 392.77174pt x 259.22935pt>
 File: Bilder/InrLogX.png Graphic file (type png)
 <use Bilder/InrLogX.png>
 Package pdftex.def Info: Bilder/InrLogX.png  used on input line 867.
 (pdftex.def)             Requested size: 196.38538pt x 129.61435pt.
-<Bilder/IntTrapze.png, id=470, 392.77174pt x 252.945pt>
+<Bilder/IntTrapze.png, id=483, 392.77174pt x 252.945pt>
 File: Bilder/IntTrapze.png Graphic file (type png)
 <use Bilder/IntTrapze.png>
-Package pdftex.def Info: Bilder/IntTrapze.png  used on input line 928.
+Package pdftex.def Info: Bilder/IntTrapze.png  used on input line 946.
 (pdftex.def)             Requested size: 196.38538pt x 126.47218pt.
-<Bilder/InrRechteck.png, id=472, 392.77174pt x 252.945pt>
+<Bilder/InrRechteck.png, id=485, 392.77174pt x 252.945pt>
 File: Bilder/InrRechteck.png Graphic file (type png)
 <use Bilder/InrRechteck.png>
-Package pdftex.def Info: Bilder/InrRechteck.png  used on input line 928.
+Package pdftex.def Info: Bilder/InrRechteck.png  used on input line 946.
 (pdftex.def)             Requested size: 196.38538pt x 126.47218pt.
 
-Overfull \hbox (26.361pt too wide) in paragraph at lines 928--928
+Overfull \hbox (26.361pt too wide) in paragraph at lines 946--946
 [][][]\OT1/cmr/m/n/10 Zerlege
  []
 
-[28 <./Bilder/BellCurveInt.png (PNG copy)> <./Bilder/InrLogX.png (PNG copy)>] [29 <./Bilder/IntTrapze.png (PNG copy)> <./Bilder/InrRechteck.png (PNG copy)>] (Mitschriften.aux)
+[29 <./Bilder/BellCurveInt.png (PNG copy)> <./Bilder/InrLogX.png (PNG copy)>] [30 <./Bilder/IntTrapze.png (PNG copy)> <./Bilder/InrRechteck.png (PNG copy)>] [31] [32]
+Chapter 8.
+[33
+
+] (Mitschriften.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.97499pt have occurred.
@@ -1582,17 +1588,17 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 48328 strings out of 478274
- 1112582 string characters out of 5839820
- 1885388 words of memory out of 5000000
- 67506 multiletter control sequences out of 15000+600000
+ 48383 strings out of 478274
+ 1113607 string characters out of 5839820
+ 1887388 words of memory out of 5000000
+ 67546 multiletter control sequences out of 15000+600000
  594612 words of font info for 266 fonts, out of 8000000 for 9000
  0 hyphenation exceptions out of 8191
  99i,17n,102p,1020b,1741s stack positions out of 10000i,1000n,20000p,200000b,200000s
  </home/luap/.miktex/texmfs/data/fonts/pk/ljfour/jknappen/ec/dpi600/tcrm1000.pk></home/luap/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newpx/NewPXMI_gnu.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx10.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmbx12.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr10.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr12.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr17.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr5.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr7.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr8.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmr9.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmss10.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmti7.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/amsfonts/cm/cmtt8.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newpx/pxmiaX.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newpx/pxsys.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newtx/txexas.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/newtx/txexs.pfb></home/luap/.miktex/texmfs/install/fonts/type1/public/txfonts/txsya.pfb>
-Output written on Mitschriften.pdf (30 pages, 2131991 bytes).
+Output written on Mitschriften.pdf (34 pages, 2157115 bytes).
 PDF statistics:
- 677 PDF objects out of 1000 (max. 8388607)
- 134 named destinations out of 1000 (max. 500000)
- 717 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 739 PDF objects out of 1000 (max. 8388607)
+ 149 named destinations out of 1000 (max. 500000)
+ 789 words of extra memory for PDF output out of 10000 (max. 10000000)
 
