@@ -107,18 +107,58 @@ $$
         &L = \int_0^{2\pi} |r| dt = 2\pi |r|
     \end{align*}
     }
+\ex{Beispiel einer nicht rektifizierbaren Kurve}{
+    \begin{align*}
+        &f:\left[ 0,1\right[\to \mathbb{R^2}\\
+        &f(t)=\begin{cases}
+            (0,0) & t = 0\\
+            (t,t\cdot \cos\left(\frac{1}{t}\right)) & t\neq 0
+        \end{cases}
+    \end{align*}
+}
 
+\thm{Hilfssatz}{
+    Sei $f:[a, b] \rightarrow \mathbb{R}^n$ stetig differenzierbar. Dann gilt $\forall \varepsilon>0 \quad \exists \delta>0$ so dass
+$$
+\forall t, \tau \in[a, b] \text { mit } 0<|t-\tau|<\delta . \quad\left\|\frac{f(t)-f(\tau)}{t-\tau}-f^{\prime}(t)\right\| \leq \varepsilon
+$$
+\begin{figure}[H]
+    \centering
+    \includegraphics*[scale = 0.2]{Bilder/NonRectifiableCurve.png}
+    \caption{Eine nicht rektifizierbare Kurve}
+\end{figure}
+}
 
+\section{Parametrisierung von Kurven}
+\dfn{Parametrisierung}{
+    Sei $f:[a, b] \rightarrow \mathbb{R}^n$ eine (stetig diff.-bare) Kurve und $\varphi:[\alpha, \beta] \rightarrow[a, b]$ eine monoton steigende bijektive (stetig differenzierbare) Abbildung. Die Kurve
+$$
+g=f \circ \varphi:[\alpha, \beta] \rightarrow \mathbb{R}^n
+$$
+geht aus $f$ durch Parameterwechsel hervor.
+}
+\thm{}{
+    Die Bogenlänge einer stetig differenzierbaren Kurve hängt nicht von der Parametrisierung ab.
+}
 
+\dfn{Parametrisierung nach Bogenlänge}{Sei $f:[a, b] \rightarrow \mathbb{R}^n$ eine (stetig diff.-bare) Kurve mit $f^{\prime}(t) \neq 0 \forall t \in[a, b]$. Dann ist die Funktion
+$$
+\varphi\left(t_1\right)=\int_a^{t_1}\left\|f^{\prime}(t)\right\| d t
+$$
+streng monoton und differenzierbar mit
+$$
+\left.\varphi^{\prime}(t)=\left\|f^{\prime}(t)\right\| \neq 0 \quad \forall t \in\right] a, b[
+$$
+und definiert eine Bijektion $\varphi:[a, b] \rightarrow[0, L]$ wobei $L$ die Bogenlänge von $f$ beschreibt. Die Umkehrabbildung $\Psi=\varphi^{-1}:[0, L] \rightarrow[a, b]$ liefert die Parametrisierung
+$$
+g=f \circ \Psi:[0, L] \rightarrow \mathbb{R}^n .
+$$
 
+Diese heißt Parametrisierung nach der Bogenlänge. Üblicherweise schreibt man $s \mapsto g(s)$.}
 
+\ex{}{}
 
-
-
-
-
-
-
+\thm{}{Sei $g:[0, L] \rightarrow \mathbb{R}^n$ Parametrisierung nach der Bogenlänge. Dann hat der Geschwindigkeitsvektor $T(s)=g^{\prime}(s)$ die Länge $\|T(s)\|=1$.}
 
 \chapter{Funktionen im $\mathbb{R}^n$}
 \section{Krümmung}
