@@ -47,7 +47,7 @@ g(t)= & f\left(t_0\right)+t f^{\prime}\left(t_0\right)
 $$
 die Tangente an $f$ in $f\left(t_0\right)$.}
 \ex{Kreis}{Der Kreis ist beschrieben durch $f(t)=(r \cos t, r \sin t)$.\newline
-Die Ableitung davon ist $$f^{\prime}(t)=(-r \sin t, r \cos t)$$ und damit die Geschwindigkeit $\sqrt{r^2\cdot \sin^2(t)+r^2\cdot\cos^2(t)} = \mid r\mid $. Die Tangente ist dann
+Die Ableitung davon ist $$f^{\prime}(t)=(-r \sin t, r \cos t)$$ und damit die Geschwindigkeit $\sqrt{r^2\cdot \sin^2(t)+r^2\cdot\cos^2(t)} = |r| $. Die Tangente ist dann
 $$
 g(s)=f(t)+s f^{\prime}(t) .
 $$}
@@ -75,11 +75,38 @@ $$
 \end{figure}
 }
 
+\section{Rektifizierbarkeit und Bogenlänge}
+\dfn{Bogenlänge}{
+    Die Kurve $f:[a, b] \rightarrow \mathbb{R}^n$ heißt rektifizierbar mit Bogenlänge $L \in \mathbb{R}$, wenn $\forall \varepsilon>0$ ein $\delta>0$ existiert, so dass für jede Unterteilung
+$$
+a=t_0<t_1<\ldots<t_r=b
+$$
+mit Feinheit $\leq \delta, d . h$.
+$$
+\left|t_i-t_{i+1}\right| \leq \delta \quad \forall \quad 0 \leq i \leq r
+$$
+gilt
+$$
+\left|P_f\left(t_0, \ldots, t_r\right)-L\right|<\varepsilon .
+$$
+}
+\thm{Hilfssatz zur Berechnung der Bogenlänge}{
+    Jede stetig differenzierbare Kurve $f:[a, b] \rightarrow \mathbb{R}^n$ ist rektifizierbar mit Bogenlänge
+$$
+L=\int_a^b\left\|f^{\prime}(t)\right\| d t
+$$
+}
 
-
-
-
-
+\ex{}{\[
+    f:\left[ 0,2\pi\right[
+    \]
+    \begin{align*}
+        &f(t) = (r\cdot\cos(t),r\sin(t))\\
+        &f^{\prime}(t) = (-r\sin(t),r\cos(t))\\
+        &\left\|f^{\prime}(t)\right\| = \sqrt{r^2\sin^2(t)+r^2\cos^2(t)} = |r|\\
+        &L = \int_0^{2\pi} |r| dt = 2\pi |r|
+    \end{align*}
+    }
 
 
 
@@ -377,7 +404,7 @@ Das Taylorpolynom 2-ter Ordnung ist
 \end{figure}
 }
 \section{Extrempunkte, Maxima, Minima}
-\dfn{}{Ser $f: u \rightarrow \mathbb{R}, U \subset \mathbb{R}^n$.
+\dfn{}{Sei $f: u \rightarrow \mathbb{R}, U \subset \mathbb{R}^n$.
 $f$ hat ein lokales 
 (lokales Muimun), wenn ein Ball
 $Br (a) \subset U$ existiert, so dass $\left.f\right|_{B_r(a)}$
